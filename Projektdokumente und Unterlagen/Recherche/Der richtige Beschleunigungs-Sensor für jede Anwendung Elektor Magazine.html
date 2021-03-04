@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Der richtige Beschleunigungs-Sensor für jede Anwendung | Elektor Magazine</title>
+
+  <meta property="og:title" content="Der richtige Beschleunigungs-Sensor für jede Anwendung">  <meta property="og:locale" content="de_DE"> <meta property="og:type" content="article">  <meta property="og:description" content="Da jede Beschleunigungssensor-Technologie mit Kompromissen verbunden ist, erfordert die Auswahl des richtigen Beschleunigungssensors ein Verständnis der betreffenden Optionen und technischen Möglichkeiten sowie eine Analyse der Umstände und Parameter, unter denen er eingesetzt wird. Um Ihnen Ihre Wahl zu erleichtern, bieten wir in diesem Artikel einen grundlegenden Überblick über die Punkte, die bei der Erfüllung aller Mess-Anforderungen berücksichtigt werden müssen.">   <meta property="og:image" content="https://cdn.xingosoftware.com/elektor/images/fetch/dpr_1/https%3A%2F%2Fwww.elektormagazine.de%2Fassets%2Fupload%2Fimages%2F42%2F20180711051809_TE-Accel.jpg">  <meta property="og:url" content="https://www.elektormagazine.de/news/der-richtige-beschleunigungs-sensor-fur-jede-anwendung"> <meta property="og:site_name" content="Elektor">
+  <meta name="twitter:card" content="summary">    <meta name="twitter:title" content="Der richtige Beschleunigungs-Sensor für jede Anwendung">   <meta name="twitter:image" content="https://cdn.xingosoftware.com/elektor/images/fetch/dpr_1/https%3A%2F%2Fwww.elektormagazine.de%2Fassets%2Fupload%2Fimages%2F42%2F20180711051809_TE-Accel.jpg">   <meta name="twitter:description" content="Da jede Beschleunigungssensor-Technologie mit Kompromissen verbunden ist, erfordert die Auswahl des richtigen Beschleunigungssensors ein Verständnis der betreffenden Optionen und technischen Möglichkeiten sowie eine Analyse der Umstände und Parameter, unter denen er eingesetzt wird. Um Ihnen Ihre Wahl zu erleichtern, bieten wir in diesem Artikel einen grundlegenden Überblick über die Punkte, die bei der Erfüllung aller Mess-Anforderungen berücksichtigt werden müssen."> 
+  <meta name="robots" content="index, follow">   <meta name="keywords" content="Sensoren, Elektor Business, TE Connectivity, Advertorial">   <meta name="description" content="Da jede Beschleunigungssensor-Technologie mit Kompromissen verbunden ist, erfordert die Auswahl des richtigen Beschleunigungssensors ein Verständnis der betreffenden Optionen und technischen Möglichkeiten sowie eine Analyse der Umstände und Parameter, unter denen er eingesetzt wird. Um Ihnen Ihre Wahl zu erleichtern, bieten wir in diesem Artikel einen grundlegenden Überblick über die Punkte, die bei der Erfüllung aller Mess-Anforderungen berücksichtigt werden müssen.">   <link rel="canonical" href="https://www.elektormagazine.de/news/der-richtige-beschleunigungs-sensor-fur-jede-anwendung">     <meta name="countable" content="eyJpdiI6IjRuNWt6aXZyTEtzbCtOYlwvenI5NVdRPT0iLCJ2YWx1ZSI6Ilh0MFFSZGlNUk1MZjk2aDZtZmFqbjlCaE1VY2lxKzkycFBzakxVY0NrRmNPTm91VGg3b0FCN0Fia2ZhYkhodlAiLCJtYWMiOiJmY2RjMmIxMTliYTA3N2QzMWQ3N2QxMzI0ZTM3YzhmYWMyNDMyMDc2OTY5MzgwNTE3YjhkNDNiODcwYmY1MTMwIn0=">  
+  
+  <meta property="fb:app_id" content="830698243682688">
+  <meta name="csrf-token" content="dvzVvrmRx0LHXclE0U68SmxgtJe7bgg8wU3JvyS0">
+
+<!-- Favicons
+  ================================================== -->
+  <link rel="apple-touch-icon" sizes="57x57" href="https://www.elektormagazine.de/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://www.elektormagazine.de/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://www.elektormagazine.de/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://www.elektormagazine.de/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://www.elektormagazine.de/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://www.elektormagazine.de/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://www.elektormagazine.de/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://www.elektormagazine.de/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.elektormagazine.de/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="https://www.elektormagazine.de/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.elektormagazine.de/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="https://www.elektormagazine.de/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://www.elektormagazine.de/favicon-16x16.png">
+  <link rel="manifest" href="https://www.elektormagazine.de/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+  ================================================== -->
+  
+  <link rel="stylesheet" href="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/animate.css">
+  <link rel="stylesheet" href="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/style.css">
+    <style type="text/css">
+    @media (min-width: 768px) {
+      .advertisement .externalBanner:after {content: "Anzeige";}
+      .advertisement .externalBanner:before {display: none;}
+    }
+    @media (max-width: 768px) {
+      .advertisement .externalBanner:before {content: "Anzeige";}
+      .advertisement .externalBanner:after {display: none;}
+    }
+  </style>
+
+  <!-- JS
+  ================================================== -->
+  <script type="text/javascript" async="" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/insight.js"></script><script src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/378958132769411.js" async=""></script><script async="" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/fbevents.js"></script><script src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/4975083_002.txt" type="text/javascript" id="hs-analytics"></script><script src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/4975083.txt" type="text/javascript" id="cookieBanner-4975083" data-cookieconsent="ignore" data-loader="hs-scriptloader" data-hsjs-portal="4975083" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/fb.js" type="text/javascript" id="hs-ads-pixel-4975083" data-ads-portal-id="4975083" data-ads-env="prod" data-loader="hs-scriptloader" data-hsjs-portal="4975083" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script type="text/javascript" async="" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/analytics.txt"></script><script async="" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/gtm.js"></script><script src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/jquery.txt"></script>
+  <script>window.jQuery || document.write('<script src="/build/plugins/jquery.min.js"><\/script>')</script>
+
+  <!-- HTML5 Shiv
+  ================================================== -->
+
+<style type="text/css"> a[data-v-11b2e33f] { cursor: pointer; } </style><script type="text/javascript" charset="UTF-8" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/common.txt"></script><script type="text/javascript" charset="UTF-8" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/util.txt"></script></head>
+ <body class="c-layout-header-fixed c-layout-header-topbar c-page-on-scroll"><style type="text/css">div#hs-eu-cookie-confirmation{background:#fff;height:auto;left:0;position:absolute;top:0;width:100%;z-index:100000000!important;border-bottom:1px solid #cbd6e2;border-top:1px solid #cbd6e2;box-shadow:0 1px 5px #eaf0f6;color:#33475b;font-family:inherit;font-size:inherit;font-weight:400!important;line-height:inherit;text-align:left;text-shadow:none!important;font-size:12px;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;line-height:18px}div#hs-eu-cookie-confirmation *{box-sizing:border-box!important}div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner{background:#fff;margin:0 auto;max-width:1000px;padding:20px}div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a{text-decoration:none!important}div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a,div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a:hover{background:none!important;border:none!important;box-shadow:none!important;color:#0091ae;font-family:inherit;font-size:inherit;font-weight:400!important;line-height:inherit;text-align:left;text-shadow:none!important}div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a:hover{text-decoration:underline!important}div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner div#hs-eu-policy-wording{margin-bottom:12px}div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area{margin:10px 0 0!important;text-align:right!important}div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button,div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-decline-button{border-radius:3px;display:inline-block;padding:10px 16px!important;text-decoration:none!important}div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button{background-color:#5388c6!important;border:1px solid #5388c6!important;margin-right:12px!important;color:#fff;font-family:inherit;font-size:inherit;font-weight:400!important;line-height:inherit;text-align:left;text-shadow:none!important}div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-decline-button{border:1px solid #5388c6!important;color:#5388c6;font-family:inherit;font-size:inherit;font-weight:400!important;line-height:inherit;text-align:left;text-shadow:none!important}div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-cookie-settings-button{color:#5388c6!important;margin-right:12px!important}div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p{margin:0 0 12px;color:#33475b;font-family:inherit;font-size:inherit;font-weight:400!important;line-height:inherit;text-align:left;text-shadow:none!important}@media print{div#hs-eu-cookie-confirmation{display:none!important}}@media screen and (max-width:480px){div#hs-eu-cookie-confirmation{font-size:12px!important}div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner{padding:8px 14px 14px!important}div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a,div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button{font-size:12px!important}div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p{font-size:12px!important;margin-bottom:12px!important;line-height:15px!important}}@media only screen and (min-width:960px){div#hs-eu-cookie-confirmation{position:fixed}div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom{border-bottom:0;bottom:0;top:auto;box-shadow:0 -1px 3px #eaf0f6}div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom-left{border-bottom:0;border-right:1px solid #cbd6e2;bottom:0;box-shadow:1px -1px 3px #eaf0f6;left:0;max-width:600px;right:auto;top:auto;width:45%}}</style><div id="hs-eu-cookie-confirmation" class="hs-cookie-notification-position-bottom" data-nosnippet="" style="display: none;">
+            <div id="hs-eu-cookie-confirmation-inner">
+              <div id="hs-eu-policy-wording"><p> Diese Website verwendet Cookies, um Ihnen mehr Benutzerfreundlichkeit durch fortlaufende Verbesserungen bieten zu können. Mehr <a href="https://www.elektormagazine.de/pages/cookies" target="_blank">Cookies</a> und <a href="https://www.elektormagazine.de/pages/datenschutzerklarung" target="_blank">Datenschutzerklärung</a> info. </p></div>
+              <p id="hs-eu-cookie-disclaimer">Wenn Sie ablehnen, werden 
+Ihre Informationen beim Besuch dieser Website nicht erfasst. Ein 
+einzelnes Cookie wird in Ihrem Browser verwendet, um daran zu erinnern, 
+dass Sie nicht nachverfolgt werden möchten.</p>
+              <div id="hs-en-cookie-confirmation-buttons-area">
+                
+                <a href="javascript:void(0);" id="hs-eu-confirmation-button" role="button">
+    Akzeptieren
+  </a>
+                <a href="javascript:void(0);" id="hs-eu-decline-button" role="button">Ablehnen</a>
+              </div>
+            </div>
+          </div> <noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-P8HSB4"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P8HSB4');</script>
+  <div class="Header__banner">   <div identifier="advertisement0" class="advertisement" ad="50"><div bpzid="5488" style="" class="_waitress externalBanner"><div style="position:absolute;z-index:1;height:90px;width:728px;background-color:transparent;cursor:pointer" onclick="window.open('https://www.elektormagazine.de/waitress/follow/5488')">&nbsp;</div><a href="https://www.elektormagazine.de/waitress/follow/5488" target="_blank"><img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/uCy4ncmbzMBJGBJNFF0hMtiN0UwNpWz5.gif" style="max-height:90px;border:none;" width="728px"></a></div></div>   </div> <div class="c-page-container"> <div class="vue-target"><div class="Menu"><header data-minimize-offset="300" class="Header c-layout-header c-header-static c-layout-header-4 c-layout-header-default-mobile"><div class="container"><div class="Header__user-menu mt-10"><a href="https://www.elektormagazine.de/account/subscription/add" class="Header__user-subscribe">Mitglied werden!</a> <a href="#" onclick="$('#login-modal').modal('show');" class="Header__user-account ml-15"><i class="icon icon-user"></i></a></div> <div class="Header__brand mb-10"><div class="Header__brand-col"><a href="https://www.elektormagazine.de/" class="c-logo"><img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/logo-mag-retina-EN.png" alt="Elektor"></a></div> <div class="Header__brand-col"><a href="https://www.elektormagazine.de/magazine/2021/166"><div class="cover"><div class="layer-1"><div style="background-image: url(&quot;https://cdn.xingosoftware.com/elektor/images/fetch/dpr_1,h_150,w_119,c_fit/https%3A%2F%2Fwww.elektormagazine.de%2Fassets%2Fupload%2Fimg%2Fpublic%2Fprivate%2Fep%2Fideas%2F200690%2Fmaterials%2Fpreview%2Foriginal%2F200666-04pdf.png&quot;);"></div></div> <div class="layer-2"><div style="background-image: url(&quot;https://cdn.xingosoftware.com/elektor/images/fetch/dpr_1,h_120,w_90,c_fit/https%3A%2F%2Fwww.elektormagazine.de%2Fassets%2Fupload%2Fimg%2Fpublic%2Fprivate%2Fep%2Fideas%2F200690%2Fmaterials%2Fpreview%2Foriginal%2F200666-04pdf.png&quot;);"></div></div> <div class="layer-3"></div></div></a></div></div></div> <div class="c-navbar"><div class="Header__nav-wrapper"><div class="Header__nav-container container"><nav class="c-mega-menu c-mega-menu-light c-mega-menu-light-mobile c-fonts-uppercase c-fonts-bold"><ul class="nav navbar-nav c-theme-nav"><li class="c-menu-type-classic  "><a href="https://www.elektormagazine.de/" target="_self" class="c-link">  Home </a></li> <li class="c-menu-type-classic  "><a href="https://www.elektormagazine.de/news" target="_self" class="c-link">  News </a></li> <li class="c-menu-type-classic  "><a href="https://www.elektormagazine.de/tags/review" target="_self" class="c-link">  Reviews </a></li> <li class="c-menu-type-classic  with-dropdown  "><a href="https://www.elektormagazine.de/articles" target="_self" class="c-link">  Artikel </a> <ul class="dropdown-menu c-pull-left"><li><a href="https://www.elektormagazine.de/select/arduino" target="_self" class="c-font-bold"> Arduino </a></li> <li><a href="https://www.elektormagazine.de/select/raspberry-pi" target="_self" class="c-font-bold"> Raspberry Pi </a></li></ul></li> <li class="c-menu-type-classic  with-dropdown  "><a href="https://www.elektormagazine.de/magazine" target="_self" class="c-link">  Zeitschrift </a> <ul class="dropdown-menu c-pull-left"><li><a href="https://www.elektormagazine.de/magazine" target="_self" class="c-font-bold"> Elektor Archiv </a></li> <li><a href="https://www.elektormagazine.de/tags/jahrgangs-dvd" target="_self" class="c-font-bold"> Jahrgangs-DVDs </a></li> <li><a href="https://www.elektormagazine.de/pages/Elektor-Jahresinhaltsverzeichnisse-herunterladen" target="_self" class="c-font-bold"> Jahresinhaltsverzeichnisse </a></li></ul></li> <li class="c-menu-type-classic  with-dropdown  "><a href="https://www.elektormagazine.de/labs" target="_self" class="c-link">  Elektor Labs </a> <ul class="dropdown-menu c-pull-left"><li><a href="https://www.elektormagazine.de/labs" target="_self" class="c-font-bold"> Online Lab </a></li> <li><a href="https://www.youtube.com/channel/UChtg0Ek8OFg-tn_Vttd3STw" target="_blank" class="c-font-bold"> Elektor TV </a></li> <li><a href="https://www.elektormagazine.com/articles/about-elektor-labs?__hstc=181156344.db9499d3fed918015d29d441180cca17.1614696122784.1614696122784.1614696122784.1&amp;__hssc=181156344.1.1614696122785&amp;__hsfp=3311043726" target="_self" class="c-font-bold"> Über Elektor Labs </a></li> <li><a href="http://www.elektorpcbservice.com/" target="_blank" class="c-font-bold"> PCB Service </a></li> <li><a href="https://elektorpcb4makers.com/" target="_blank" class="c-font-bold"> PCB 4 Makers </a></li></ul></li> <li class="c-menu-type-classic  with-dropdown  "><a href="https://www.elektormagazine.de/die-elektor-industry-startseite" target="_self" class="c-link">  Industry </a> <ul class="dropdown-menu c-pull-left"><li><a href="https://www.elektormagazine.de/elektor-business/newsrooms" target="_self" class="c-font-bold"> Newsrooms </a></li> <li><a href="https://www.elektormagazine.de/elektor-business" target="_self" class="c-font-bold"> Newsrooms nach Kategorie </a></li> <li><a href="https://www.elektormagazine.de/tags/elektor-business-edition" target="_self" class="c-font-bold"> Business-Ausgaben </a></li></ul></li> <li class="c-menu-type-classic  with-dropdown  "><a href="https://www.elektormagazine.de/electronica-fast-forward-awards" target="_self" class="c-link">  Start-Up Contests </a> <ul class="dropdown-menu c-pull-left"><li><a href="https://www.elektormagazine.de/effwd-2020" target="_self" class="c-font-bold"> electronica fast forward 2020 </a></li> <li><a href="https://www.elektormagazine.de/productronica-fast-forward-awards" target="_self" class="c-font-bold"> productronica Fast Forward 2019 </a></li> <li><a href="https://www.elektormagazine.de/tags/electronica-2018" target="_self" class="c-font-bold"> electronica Fast Forward 2018 </a></li> <li><a href="https://www.elektormagazine.com/pages/productronica-fast-forward-2019-the-startup-platform-powered-by-elektor-terms-and-conditions?__hstc=181156344.db9499d3fed918015d29d441180cca17.1614696122784.1614696122784.1614696122784.1&amp;__hssc=181156344.1.1614696122785&amp;__hsfp=3311043726" target="_blank" class="c-font-bold"> Teilnahmebedingungen </a></li> <li><a href="https://www.elektormagazine.de/select/fast-forward-award" target="_self" class="c-font-bold"> Fast Forward Select </a></li> <li><a href="https://www.elektormagazine.de/news/download-des-fast-forward-start-up-guide-2018" target="_blank" class="c-font-bold"> Start-up guide 2018 </a></li></ul></li> <li class="c-menu-type-classic  "><a href="https://www.elektor.de/new/new-in-the-store?__hstc=181156344.db9499d3fed918015d29d441180cca17.1614696122784.1614696122784.1614696122784.1&amp;__hssc=181156344.1.1614696122785&amp;__hsfp=3311043726" target="_blank" class="c-link"><i class="icon-menu"></i>  Zum Shop </a></li></ul></nav> <a href="#" class="Header__search-button"><i class="icon icon-search"></i></a></div></div></div> <div class="Header__search-wrapper hidden-xs"><div class="Header__search container"><form method="get" action="https://www.elektormagazine.de/search" class="search-menu"><input type="text" name="query" placeholder="In 50 Jahren Elektor suchen" class="form-control mr-10"> <button type="submit">Suchen</button></form></div></div></header> <header data-minimize-offset="300" class="Header c-layout-header c-layout-header-4 c-layout-header-default-mobile"><div class="Header__on-scroll"><div class="c-quick-sidebar-toggler-wrapper"><button aria-label="Menu toggler" type="button" data-target=".c-mega-menu" class="c-hor-nav-toggler c-quick-sidebar-toggler"><span class="c-line"></span> <span class="c-line"></span> <span class="c-line"></span></button></div> <div class="Header__on-scroll-content container"><div class="c-quick-sidebar-toggler-wrapper"></div> <a href="https://www.elektormagazine.de/" class="c-logo"><img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/logo-mag-retina-EN.png" alt="Elektor"></a> <div class="Header__search hidden-sm hidden-xs"><form method="get" action="https://www.elektormagazine.de/search" class="search-menu"><input type="text" name="query" placeholder="In 50 Jahren Elektor suchen" class="form-control mr-10"> <button type="submit">Suchen</button></form></div> <a href="#" class="Header__search-button"><i class="icon icon-search"></i></a> <div class="Header__user-menu hidden-sm hidden-xs"><a href="https://www.elektormagazine.de/account/subscription/add" class="Header__user-subscribe">Mitglied werden!</a> <a href="#" onclick="$('#login-modal').modal('show');" class="Header__user-account ml-15"><i class="icon icon-user"></i></a></div></div> <div class="Header__search-wrapper"><div class="Header__search"><form method="get" action="https://www.elektormagazine.de/search" class="search-menu"><input type="text" name="query" placeholder="In 50 Jahren Elektor suchen" class="form-control mr-10"> <button type="submit">Suchen</button></form></div></div></div></header> <nav class="c-layout-quick-sidebar"><div class="c-content"><div class="Header__user-menu hidden-lg hidden-md mt-20 ml-10"><a href="https://www.elektormagazine.de/account/subscription/add" class="Header__user-subscribe">Mitglied werden!</a> <a href="#" onclick="$('#login-modal').modal('show');" class="Header__user-account ml-15"><i class="icon icon-user"></i></a></div> <ul class="nav navbar-nav c-theme-nav mt-10"><li class="c-menu-type-classic c-font-uppercase "><a href="https://www.elektormagazine.de/" target="_self" class="c-link">  Home </a></li> <li class="c-menu-type-classic c-font-uppercase "><a href="https://www.elektormagazine.de/news" target="_self" class="c-link">  News </a></li> <li class="c-menu-type-classic c-font-uppercase "><a href="https://www.elektormagazine.de/tags/review" target="_self" class="c-link">  Reviews </a></li> <li class="c-menu-type-classic c-font-uppercase "><a href="https://www.elektormagazine.de/articles" target="_self" class="c-link"><span class="c-link-name">  Artikel </span> <span onclick="if($(this).parent().next().is(':visible')){$(this).parent().next().hide();}else{$(this).parent().next().show();}return false;" class="dropdown-indicator pull-right"><i class="icon-chevron-down"></i></span></a> <ul class="dropdown-menu c-menu-type-clasc c-pull-left"><li><a href="https://www.elektormagazine.de/select/arduino" target="_self" class="c-font-small"> Arduino </a></li> <li><a href="https://www.elektormagazine.de/select/raspberry-pi" target="_self" class="c-font-small"> Raspberry Pi </a></li></ul></li> <li class="c-menu-type-classic c-font-uppercase "><a href="https://www.elektormagazine.de/magazine" target="_self" class="c-link"><span class="c-link-name">  Zeitschrift </span> <span onclick="if($(this).parent().next().is(':visible')){$(this).parent().next().hide();}else{$(this).parent().next().show();}return false;" class="dropdown-indicator pull-right"><i class="icon-chevron-down"></i></span></a> <ul class="dropdown-menu c-menu-type-clasc c-pull-left"><li><a href="https://www.elektormagazine.de/magazine" target="_self" class="c-font-small"> Elektor Archiv </a></li> <li><a href="https://www.elektormagazine.de/tags/jahrgangs-dvd" target="_self" class="c-font-small"> Jahrgangs-DVDs </a></li> <li><a href="https://www.elektormagazine.de/pages/Elektor-Jahresinhaltsverzeichnisse-herunterladen" target="_self" class="c-font-small"> Jahresinhaltsverzeichnisse </a></li></ul></li> <li class="c-menu-type-classic c-font-uppercase "><a href="https://www.elektormagazine.de/labs" target="_self" class="c-link"><span class="c-link-name">  Elektor Labs </span> <span onclick="if($(this).parent().next().is(':visible')){$(this).parent().next().hide();}else{$(this).parent().next().show();}return false;" class="dropdown-indicator pull-right"><i class="icon-chevron-down"></i></span></a> <ul class="dropdown-menu c-menu-type-clasc c-pull-left"><li><a href="https://www.elektormagazine.de/labs" target="_self" class="c-font-small"> Online Lab </a></li> <li><a href="https://www.youtube.com/channel/UChtg0Ek8OFg-tn_Vttd3STw" target="_blank" class="c-font-small"> Elektor TV </a></li> <li><a href="https://www.elektormagazine.com/articles/about-elektor-labs?__hstc=181156344.db9499d3fed918015d29d441180cca17.1614696122784.1614696122784.1614696122784.1&amp;__hssc=181156344.1.1614696122785&amp;__hsfp=3311043726" target="_self" class="c-font-small"> Über Elektor Labs </a></li> <li><a href="http://www.elektorpcbservice.com/" target="_blank" class="c-font-small"> PCB Service </a></li> <li><a href="https://elektorpcb4makers.com/" target="_blank" class="c-font-small"> PCB 4 Makers </a></li></ul></li> <li class="c-menu-type-classic c-font-uppercase "><a href="https://www.elektormagazine.de/die-elektor-industry-startseite" target="_self" class="c-link"><span class="c-link-name">  Industry </span> <span onclick="if($(this).parent().next().is(':visible')){$(this).parent().next().hide();}else{$(this).parent().next().show();}return false;" class="dropdown-indicator pull-right"><i class="icon-chevron-down"></i></span></a> <ul class="dropdown-menu c-menu-type-clasc c-pull-left"><li><a href="https://www.elektormagazine.de/elektor-business/newsrooms" target="_self" class="c-font-small"> Newsrooms </a></li> <li><a href="https://www.elektormagazine.de/elektor-business" target="_self" class="c-font-small"> Newsrooms nach Kategorie </a></li> <li><a href="https://www.elektormagazine.de/tags/elektor-business-edition" target="_self" class="c-font-small"> Business-Ausgaben </a></li></ul></li> <li class="c-menu-type-classic c-font-uppercase "><a href="https://www.elektormagazine.de/electronica-fast-forward-awards" target="_self" class="c-link"><span class="c-link-name">  Start-Up Contests </span> <span onclick="if($(this).parent().next().is(':visible')){$(this).parent().next().hide();}else{$(this).parent().next().show();}return false;" class="dropdown-indicator pull-right"><i class="icon-chevron-down"></i></span></a> <ul class="dropdown-menu c-menu-type-clasc c-pull-left"><li><a href="https://www.elektormagazine.de/effwd-2020" target="_self" class="c-font-small"> electronica fast forward 2020 </a></li> <li><a href="https://www.elektormagazine.de/productronica-fast-forward-awards" target="_self" class="c-font-small"> productronica Fast Forward 2019 </a></li> <li><a href="https://www.elektormagazine.de/tags/electronica-2018" target="_self" class="c-font-small"> electronica Fast Forward 2018 </a></li> <li><a href="https://www.elektormagazine.com/pages/productronica-fast-forward-2019-the-startup-platform-powered-by-elektor-terms-and-conditions?__hstc=181156344.db9499d3fed918015d29d441180cca17.1614696122784.1614696122784.1614696122784.1&amp;__hssc=181156344.1.1614696122785&amp;__hsfp=3311043726" target="_blank" class="c-font-small"> Teilnahmebedingungen </a></li> <li><a href="https://www.elektormagazine.de/select/fast-forward-award" target="_self" class="c-font-small"> Fast Forward Select </a></li> <li><a href="https://www.elektormagazine.de/news/download-des-fast-forward-start-up-guide-2018" target="_blank" class="c-font-small"> Start-up guide 2018 </a></li></ul></li> <li class="c-menu-type-classic c-font-uppercase "><a href="https://www.elektor.de/new/new-in-the-store?__hstc=181156344.db9499d3fed918015d29d441180cca17.1614696122784.1614696122784.1614696122784.1&amp;__hssc=181156344.1.1614696122785&amp;__hsfp=3311043726" target="_blank" class="c-link"><i class="icon-menu"></i>  Zum Shop </a></li></ul> <div class="Header__sidebar-bottom-content"><div><a href="https://www.elektor.de/?__hstc=181156344.db9499d3fed918015d29d441180cca17.1614696122784.1614696122784.1614696122784.1&amp;__hssc=181156344.1.1614696122785&amp;__hsfp=3311043726" target="_blank"><img alt="" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/20200312140921_discount-offers-.png" height="64"></a></div> <aside width="100%"><div style="text-align: center;"><a href="https://www.elektor.de/?__hstc=181156344.db9499d3fed918015d29d441180cca17.1614696122784.1614696122784.1614696122784.1&amp;__hssc=181156344.1.1614696122785&amp;__hsfp=3311043726" target="_blank"><span style="font-size: 16px;"><span style="color: rgb(193, 205, 234);">Entdecken Sie<br>
+unsere Angebote!</span></span></a></div></aside></div></div></nav></div></div> <div id="app" class="c-layout-page container has-aside">   <div class="c-layout-content">   <div class="container pl-0"> <article itemscope="" itemtype="http://schema.org/BlogPosting"> <meta itemscope="" itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://www.elektormagazine.de/news/der-richtige-beschleunigungs-sensor-fur-jede-anwendung"> <div itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization"> <div itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject"> <meta itemprop="url" content="/build/img/logo-makemagazine.png"> <meta itemprop="width" content="seo.publisher-logo-width"> <meta itemprop="height" content="seo.publisher-logo-height"> </div> <meta itemprop="name" content="seo.publisher-name"> </div> <div class="item-content article-content">      <span id="accolade"></span>  <h1 class="c-font-secondary c-font-bold c-font-uppercase c-margin-t-20 c-margin-b-20" itemprop="headline">Der richtige Beschleunigungs-Sensor für jede Anwendung</h1>  <div> <div class="hidden mobile-tag-container ">  <b>11.07.2018</b> <br>  <span class="meta-author"> Von <a href="https://www.elektormagazine.de/authors/2/elektor-team"><b><u><span itemprop="name">Elektor Team</span></u></b></a> </span>  über <span class="tags-category"> <a href="https://www.elektormagazine.de/categories/advertorial"><b><u>Advertorial</u></b></a> </span>   <div> <div class="tags c-margin-t-10 c-margin-b-10"> <div class="TagList">   <a class="TagList__tag tag select-tag c-font-bold c-font-uppercase c-font-smaller c-font-secondary " href="https://www.elektormagazine.de/select/sensoren"><i class="icon icon-select"></i> Sensoren</a>     <a class="TagList__tag tag c-font-bold c-font-uppercase c-font-smaller c-font-secondary " href="https://www.elektormagazine.de/tags/elektorbusiness">Elektor Business</a>     <a class="TagList__tag tag c-font-bold c-font-uppercase c-font-smaller c-font-secondary " href="https://www.elektormagazine.de/tags/te-connectivity">TE Connectivity</a>    </div> </div>   </div> </div> <div class="article-head">  </div> <div class="article-teaser text invisible" itemprop="description">Da
+ jede Beschleunigungssensor-Technologie mit Kompromissen verbunden ist, 
+erfordert die Auswahl des richtigen Beschleunigungssensors ein 
+Verständnis der betreffenden Optionen und technischen Möglichkeiten 
+sowie eine Analyse der Umstände und Parameter, unter denen er eingesetzt
+ wird. Um Ihnen Ihre Wahl zu erleichtern, bieten wir in diesem Artikel 
+einen grundlegenden Überblick über die Punkte, die bei der Erfüllung 
+aller Mess-Anforderungen berücksichtigt werden müssen.</div>   <div class="article-body clearfix mobile-overflow" itemprop="articleBody">
+ Bei der Entwicklung und beim Test von Produkten in rauen, komplexen 
+Umgebungen können Beschleunigungssensoren wertvolle Daten liefern. Die 
+Wahl eines ungeeigneten Exemplars kann dabei jedoch mit schwerwiegenden,
+ negativen Auswirkungen auf die Messergebnisse verbunden sein – nicht 
+zuletzt ein Problem für Ingenieure, die sich mit Stoß- und Schocktests 
+befassen und bei denen hohe Temperaturen und extreme Vibrationen und 
+Erschütterungen zusätzliche Herausforderungen bei der Ermittlung 
+präziser Ergebnisse darstellen.<br>
+<br>
+Da jede Beschleunigungssensor-Technologie mit Kompromissen verbunden 
+ist, erfordert die Auswahl des richtigen Beschleunigungssensors ein 
+Verständnis der betreffenden Optionen und technischen Möglichkeiten 
+sowie eine Analyse der Umstände und Parameter, unter denen er eingesetzt
+ wird.<br>
+<br>
+Um Ihnen Ihre Wahl zu erleichtern, bieten wir in diesem Artikel einen 
+grundlegenden Überblick über die Punkte, die bei der Erfüllung aller 
+Mess-Anforderungen berücksichtigt werden müssen. Darüber hinaus finden 
+Sie eine Liste kritischer Fragen für eine hypothetische Situation mit 
+Messungen über 50&nbsp;<em>g</em>, um auf Probleme hinzuweisen, die bei Entscheidungsprozessen eine wichtige Rolle spielen.<br>
+<br>
+<strong>Punkt 1: Beschleunigungssensor-Klassen</strong><br>
+Es gibt zwei Klassen von Beschleunigungssensoren: AC-Response und 
+DC-Response. Beim ersteren ist der Ausgang AC-gekoppelt. Er ist nur für 
+dynamische Ereignisse geeignet und kann nicht zur Messung statischer 
+Beschleunigung wie Schwerkraft und konstanter Zentrifugalbeschleunigung 
+verwendet werden.<br>
+Ein DC-Response-Sensor ist dagegen DC-gekoppelt und kann auf Änderungen 
+bis zu 0&nbsp;Hz reagieren. Dadurch können sowohl die statische als auch
+ die dynamische Beschleunigung gemessen werden. Die Messung der 
+statischen Beschleunigung ist jedoch nicht der einzige Grund für die 
+Wahl eines DC-Beschleunigungsmessers.<br>
+<br>
+Bei realen Anwendungen werden bei der Mehrzahl der Schwingungsanalysen 
+Informationen über Beschleunigung, Geschwindigkeit und Verschiebung 
+benötigt. Dies sind wichtige Variablen, die von Ingenieuren beim Entwurf
+ oder bei der Validierung einer Struktur benötigt werden. Im Allgemeinen
+ bietet der g-Wert eine gute Referenz, aber Geschwindigkeit und 
+Verschiebung sind die bei Konstruktionsberechnungen am häufigsten 
+benötigten Variablen. Um Geschwindigkeit und Verschiebung vom 
+Beschleunigungswert abzuleiten, wird das vom Beschleunigungsmesser 
+ausgegebene Signal im analogen oder digitalen Bereich integriert bzw. 
+doppelt integriert. Hier kann ein AC-Response-Beschleunigungssensor zu 
+Problemen führen, da er eine innere Begrenzung besitzt, die ihm durch 
+seine RC-Zeitkonstante auferlegt wird. Daher treten hier im gegensatz 
+zur DC-Version Probleme auf (<strong>Bild&nbsp;1</strong>).<br>
+&nbsp;
+<div class="image-center">
+<figure class="inpage-caption"><img alt="" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/20180711052729_Figure-1-TE.jpg" width="250" height="167">
+<figcaption>Bild 1: Eingebettete Beschleunigungssensoren: TE entwickelt verschiedene,<br>
+auf Leiterplatten untergebrachte piezoelektrische Sensoren<br>
+sowie Sensoren des Typs Silizium-MEMS.</figcaption>
+</figure>
+</div>
+<strong>Punkt 2: Beschleunigungssensor-Technologien</strong><br>
+AC-Beschleunigungssensoren arbeiten üblicherweise auf der Basis 
+piezoelektrischer Elemente. Bei Beschleunigung bewirkt die seismische 
+Masse des Sensors eine Ladungsverschiebung im piezoelektrischen Element,
+ wodurch eine zur Beschleunigung proportionale Spannung an den 
+Anschlüssen zur Verfügung steht. Piezoelektrische Elemente verhalten 
+sich elektrisch wie ein als Spannungsquelle geschalteter Kondensator mit
+ einem festen Innenwiderstand, typischerweise in der Größenordnung von 
+10<sup>9</sup>&nbsp;Ω. Durch die damit vorgegebene RC-Zeitkonstante wird
+ eine Hochpass-Charakteristik ausgebildet, die dazu führt, dass 
+piezoelektrische Beschleunigungsmesser nicht zum Messen statischer 
+Ereignisse verwendet werden können. Da piezoelektrische Elemente aus 
+natürlichem und künstlichem Material hergestellt werden, zeichnen sie 
+sich&nbsp; außerdem durch unterschiedliche Transduktionseffizienz- und 
+Linearitätsmerkmale aus.<br>
+<br>
+Auf dem Markt sind zwei Arten von piezoelektrischen 
+Beschleunigungssensoren erhältlich: Ladungsausgangstyp und 
+Spannungsausgangstyp. Sie besitzen sehr kleine Abmessungen und eignen 
+sich für dynamische Messungen in Leichtbaustrukturen.<br>
+<br>
+Piezoelektrische Sensoren mit dem Zusatz <em>Charge Mode</em> basieren 
+auf Bleizirkonat-Titanatkeramiken (PZT), die einen sehr großen 
+Temperaturbereich, einen breiten dynamischen Bereich und eine große 
+Bandbreite (verwendbar bis über 10 kHz) bieten. Wenn sie in einem 
+hermetischen, geschweißten Metallgehäuse untergebracht sind, kann von 
+einer langen Lebensdauer ausgegangen werden, da dieser Sensor in der 
+Lage ist, widrigsten Umgebungsbedingungen zu widerstehen. Aufgrund des 
+weiten Betriebstemperaturbereichs piezoelektrischer Keramiken können 
+einige Charge-Mode-Exemplare von -200&nbsp;°C bis +640&nbsp;°C und 
+darüber hinaus verwendet werden. Sie eignen sich besonders für den 
+Einsatz im Bereich Schwingungsmessungen bei Temperaturextremen wie zum 
+Beispiel bei der Überwachung von Turbinentriebwerken.<br>
+<br>
+Eine alternative Variante des piezoelektrischem Beschleunigungsmesser 
+liefert eine Ausgangsspannung, die durch den zusätzlichern Einbau eines 
+Ladungsverstärkers in seinem Gehäuse erreicht wird. Im Gegensatz zum 
+Charge-Mode-Verfahren, bei dem nur ein oder mehrere keramische 
+Sensorelemente verwendet werden, wird beim Spannungsmodus-Verfahren eine
+ mikroelektronische Schaltung genutzt, die die Betriebstemperatur der 
+Vorrichtung auf die maximale Betriebstemperatur der Elektronik begrenzt,
+ die üblicherweise bei +125&nbsp;°C liegt. Einige Varianten 
+überschreiten die Grenze auf +175&nbsp;°C, was jedoch mit Kompromissen 
+bei anderen Leistungen verbunden ist (<strong>Bild&nbsp;2</strong>).<br>
+&nbsp;
+<div class="image-center">
+<figure class="inpage-caption"><img alt="" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/20180711051809_TE-Accel.jpg" width="250" height="167">
+<figcaption>Bild 2: Plug &amp; Play Beschleunigungssensoren:<br>
+Die Sensoren des Typs packaged von TE sind als DC-Versionen (statisch)<br>
+und als AC-Versionen (dynamisch) ausgelegt und zeichnen sich<br>
+durch einen großen Messbereich und eine bequeme Benutzeroberfläche aus.</figcaption>
+</figure>
+</div>
+Die Wahl des richtigen Beschleunigungsmessers erfordert auch eine 
+Beurteilung der Bedingungen, unter denen er eingesetzt werden muss – 
+insbesondere, wenn diese Bedingungen rau und komplex sind. Im Folgenden 
+fünf grundlegende Fragen für die Planung einer Messung über 50&nbsp;<em>g</em>:<br>
+&nbsp;<br>
+&nbsp;<br>
+<strong>1. Wie groß ist der zu erwartende dynamische Bereich, der gemessen oder getestet werden soll?</strong>
+ Bei Verwendung eines Beschleunigungsmessers sollte genügend Spielraum 
+vorhanden sein, um sicherzustellen, dass die Testergebnisse verwendbar 
+sind und der Messbereich den Full-Scale-Ausgang des 
+Beschleunigungsmessers nicht überschreitet. Wenn zum Beispiel der <em>g</em>-Wert
+ höher als die obere Grenze des Beschleunigungsmessers ist, kann das 
+Signal abgeschnitten, und die Testergebnisse unbrauchbar werden. Nach 
+Best-Practice-Standards sollten die Ergebnisse 30-40&nbsp;% des gesamten
+ Geräte-Messbereichs ausmachen und niemals unter 10&nbsp;% liegen.<br>
+&nbsp;<br>
+<strong>2. Wie groß ist die Messbandbreite? </strong>Diese hängt unter 
+anderem von der Art des Tests und der Aufprallfläche ab. Bei der Messung
+ eines Falls mit einer weichen Landung reicht z.&nbsp;B. oft eine 
+geringe Bandbreite. Wenn es jedoch darum geht, <em>g</em>-Spitzenwerte 
+innerhalb von High-Impact-Tests mit Munition oder bei Autounfällen zu 
+messen, wird eine größere Bandbreite benötigt.<br>
+&nbsp;<br>
+<strong>3. Wie wird der Sensor während des Tests montiert?</strong> Es 
+ist wichtig, wie der Beschleunigungssensor installiert wird und wo er 
+platziert wird. Idealerweise sollten Beschleunigungsmesser starr an der 
+Apparatur befestigt werden. Obwohl es dazu Materialien wie Cyan-Acrylat 
+gibt, sollten die meisten Epoxide und Klebstoffe vermieden werden, da 
+sie als zusätzliche Dämpfung wirken und Energie absorbieren.<br>
+<br>
+<strong>4. Unter welchen Bedingungen wird der Test durchgeführt?</strong><br>
+Alle Beschleunigungssensoren sind auf eine bestimmte Toleranz des 
+Temperaturbereichs kompensiert, so dass für eine genaue Messung die 
+Testbedingungen bekannt sein müssen. Feuchtigkeit, Schnee, geografische 
+Höhe und Messungen unter Wasser können eine wichtige Rolle bei der Wahl 
+des optimalen Sensors bei gegebenen Bedingungen spielen (<strong>Bild&nbsp;3</strong>).<br>
+<br>
+<strong>5. Welche Messparameter werden benötigt?</strong> Obwohl der 
+Beschleunigungssensor die Beschleunigung in g misst, kann er, bei 
+Verwendung einer DC-Version, auch zur Bestimmung von Geschwindigkeit und
+ Verschiebung verwendet werden.<br>
+&nbsp;
+<div class="image-center">
+<figure class="inpage-caption"><img alt="" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/20180711050729_Figure-3-TE.png" width="250" height="162">
+<figcaption>Bild 3: TE Beschleunigungssensoren für Crash-Tests<br>
+erfassen kritische Messpunkte während des Tests.</figcaption>
+</figure>
+</div>
+<strong>Punkt 3: Sensortechnologien in DC-Beschleunigungssensoren</strong><br>
+Es gibt zwei bekannte Sensortechnologien in DC-Beschleunigungssensoren: 
+Kapazitiv und piezoresistiv. Sensoren vom kapazitiven Typ (basierend auf
+ den Kapazitätsänderungen in der seismischen Masse unter Beschleunigung)
+ ist die am häufigsten verwendete Technologie, die durch Anwendungen wie
+ Airbags und mobile Geräte bekannt wurden. Sie basieren auf der 
+Fertigungstechnologie für mikroelektromechanische Systeme (MEMS), die 
+kostengünstig und für Anwendungen mit großen Abmessungen geeignet ist. 
+Sie besitzen jedoch den Nachteil eines schlechten 
+Signal-Rausch-Verhältnisses und eines begrenzten Dynamik Bereichs, der 
+sie daher vor allem für die Messung von niederfrequenten Bewegungen 
+geeignet macht, wo der g-Pegel ebenfalls niedrig ist.<br>
+<br>
+Die andere, häufig verwendete Sensortechnologie für 
+Gleichstrom-Beschleunigungssensoren wird als „piezoresistiv“ bezeichnet.
+ Ein piezoresistiver Beschleunigungsmesser basiert auf 
+Widerstandsänderungen in Dehnungsmessstreifen, die Teil des seismischen 
+Systems des Sensors sind. Da die meisten piezoresistiven Sensoren im 
+Allgemeinen empfindlich gegenüber Temperaturschwankungen sind, ist es 
+notwendig, eine interne oder externe Temperaturkompensation am Ausgang 
+hinzuzufügen. Moderne piezoresistive Sensoren nutzen dazu spezielle 
+integrierte Schaltkreise für alle Formen der 
+On-Board-Signalkonditionierung sowie für die Temperaturkompensation vor 
+Ort.<br>
+<br>
+Die Bandbreite piezoresistiver Beschleunigungssensoren kann bis zu 
+7000&nbsp;Hz betragen. Viele dieser Sensoren sind entweder gasgedämpft 
+(MEMS-Typen) oder fluidgedämpft (fest haftende Dehnungsmessstreifen). 
+Die Dämpfungseigenschaften können ein wichtiger Faktor bei der Auswahl 
+eines Beschleunigungssensors sein. In Anwendungen mit hochfrequenten 
+mechanischen Schwingungen (am Eingang vorhanden oder durch Anregung), 
+kann ein gedämpfter Beschleunigungssensor das Überschwingen des Sensors 
+(Resonanz) verhindern und den dynamischen Bereich gewährleisten oder 
+sogar verbessern. Da der piezoresistive Sensorausgang differentiell ist 
+und einen ohmschen Widerstand bildet, ist das Signal-Rausch-Verhältnis 
+im Allgemeinen hervorragend: Sein Dynamikbereich ist nur durch die 
+Qualität des DC-Brückenverstärkers begrenzt.<br>
+<br>
+Wegen ihrer größeren Bandbreiten sind Beschleunigungsmesser vom 
+piezoresistiven Typ am besten für Impuls- bzw. Stoßmessungen geeignet, 
+bei denen der Frequenzbereich und der g-Pegel typischerweise hoch sind 
+(z.&nbsp;B. für sehr hohe <em>g</em>-Stoßmessungen, wobei einige piezoresistive Ausführungen Beschleunigungswerte von weit über 10.000&nbsp;<em>g</em>
+ vertragen). Da es sich um DC-Geräte handelt, kann die gewünschte 
+Geschwindigkeits- und Verschiebungsinformation ohne Integrationsfehler 
+wesentlich genauer aus den Beschleunigungswerten abgeleitet werden.<br>
+<br>
+<br>
+<strong>Die Wahl des richtigen Beschleunigungssensors anhand seiner Eigenschaften</strong><br>
+Eine kurze Zusammenfassung:<br>
+<br>
+• Die piezoelektrische Ausführung mit Charge-Mode ist aufgrund ihrer 
+einfachen Konstruktion und robusten Materialeigenschaften der 
+langlebigste Beschleunigungssensortyp. Für Anwendungen mit hoher 
+Temperatur (&gt; 150&nbsp;°C) für dynamische Messungen stellt er eine 
+naheliegende Wahl – und in den meisten Fällen die einzige Wahl dar.<br>
+• Piezoelektrische Sensoren im Spannungsmodus sind die beliebtesten 
+Beschleunigungsmesser für dynamische Messungen. Sie haben geringe 
+Abmessungen, eine große Bandbreite und einen integrierten 
+Ladungsumwandler, der eine direkte Schnittstelle zu vielen modernen 
+Signalanalysatoren und Datenerfassungssystemen (mit integrierter IEPE / 
+ICP-Stromquelle) darstellt. Der piezoelektrische Spannungsmodus ist 
+typischerweise auf Anwendungen beschränkt, die unter 125&nbsp;°C 
+arbeiten.<br>
+• Kapazitive Ausführungen, von kritisch gedämpft bis überdämpft, eignen 
+sich für niederfrequente Messungen. Die kostengünstige SMD-Geräteklasse 
+bietet sich bei Anwendungen mit hohen Stückzahlen an, bei denen höchste 
+Genauigkeit keine Priorität hat. Umgekehrt weisen die teureren 
+kapazitiven Silizium-MEMS-Beschleunigungsmesser mit 
+Instrumentierungsqualität eine gute Vorspannungsstabilität und ein sehr 
+geringes Rauschen auf. Kapazitive Beschleunigungssensoren haben eine 
+niedrige Impedanz und einen Ausgangsbereich von ±2&nbsp;V bis ±5&nbsp;V,
+ wobei die meisten Designs eine geregelte Gleichspannung für die 
+Stromversorgung benötigen.<br>
+• Piezoresistive Beschleunigungssensoren sind vielseitig in Bezug auf 
+ihre Frequenz- und Dynamikbereiche. Als ein DC-Response-Gerät kann es 
+statische Beschleunigung verarbeiten und genaue Geschwindigkeits- und 
+Verschiebungsdaten erzeugen. Seine große Bandbreite deckt auch die 
+meisten dynamischen Messanforderungen ab. Piezoresistive Ausführungen 
+bieten verschiedene Grade der Dämpfungsreaktion, die sie für die 
+Verwendung in einer Vielzahl von Testbedingungen, einschließlich 
+Schockprüfungen, geeignet erscheinen lässt. Einfache piezoresistive 
+Beschleunigungssensoren (ohne Elektronik) sind klein und leicht und 
+haben eine Ausgangsspannung von ±100 bis ±200&nbsp;mV. Die verstärkten 
+Modelle (mit eingebautem Chip) verfügen über eine niedrige 
+Ausgangsimpedanz (&lt;100&nbsp;Ω) und eine Ausgangsspannung von 
+±2&nbsp;V bis ±5&nbsp;V (full scale).<br>
+<br>
+<br>
+<strong>Realisierbare Lösung für eine hypothetische Messung über 50 g</strong><br>
+Piezoresistive DC-Beschleunigungssensoren sind am besten für Impuls- 
+bzw. Stoßmessungen geeignet, bei denen der Frequenzbereich und der Pegel
+ typischerweise hoch sind, damit die gewünschte Geschwindigkeits- und 
+Verschiebungsinformation ohne Integrationsfehler möglichst genau aus dem
+ Beschleunigungswert abgeleitet werden kann. Daher werden piezoresistive
+ Sensoren meistens in Fahrzeugsicherheitstests (<strong>Bild&nbsp;4</strong>), bei Waffentests und bei höheren Stoßbereichsmessungen jenseits des nutzbaren VC-Bereichs verwendet.<br>
+&nbsp;
+<div class="image-center">
+<figure class="inpage-caption"><img alt="" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/20180711050829_Figure-4-TE.jpg" width="250" height="134">
+<figcaption>Bild 4: TE bietet eine breite Vielfalt von<br>
+Beschleunigungssensoren zur Entwicklung<br>
+und zum Test von Fahrzeugen.</figcaption>
+</figure>
+</div>
+
+<div class="image-center">
+<figure class="inpage-caption"><img alt="" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/20180711051146_Figure5.jpg" width="250" height="172">
+<figcaption>Bild 5: Der Beschleunigungssensor 3038<br>
+wurde zur Anwendung in Umgebungen mit<br>
+extremer Temperatur sowie für Belastungen<br>
+durch Schock und Vibrationen entwickelt.<br>
+&nbsp;</figcaption>
+</figure>
+</div>
+Der Beschleunigungssensor von <em>TE Connectivity</em> (TE) Modell 3038 [1] – ein piezoresistiver MEMS-Sensor - ist eine leistungsfähige Lösung zur Messung von Werten über 50&nbsp;<em>g</em>,
+ wurde für den Einsatz in anspruchsvollen Anwendungen und Umgebungen 
+entwickelt und zeichnet sich durch eine hervorragende Haltbarkeit, einen
+ hohen Überlagerungsschutz und eine Langzeitstabilität aus (<strong>Bild&nbsp;5</strong>).<br>
+Er liefert zuverlässige Leistungen in größeren Höhen und in stark 
+beanspruchenden Temperaturbereichen von -55&nbsp;°C bis 125&nbsp;°C und 
+ist in seiner hermetisch abgedichteten SMD-Ausführung einfach zu 
+installieren. Er enthält mechanische Übersteuerungsanschläge, die es ihm
+ ermöglichen, Stoßbelastungen bis zu 10.000&nbsp;<em>g</em> zu 
+verkraften, während gleichzeitig auch Präzisionsmessungen von 
+±1,0&nbsp;% möglich sind. Außerdem enthält der Sensor ein gasgedämpftes 
+piezoresistives MEMS-Sensorelement, das eine hervorragende 
+Langzeitstabilität bietet.
+
+<div>&nbsp;</div>
+<strong>Weblink</strong><br>
+[1] TE Connectivity, Model 3038 Accelerometer, <a href="http://www.te.com/usa-en/product-CAT-EAC0003.html?q=3038&amp;source=header" target="_blank">http://www.te.com/usa-en/product-CAT-EAC0003.html?q=3038&amp;source=header</a>.<br>
+&nbsp;
+<hr><br>
+<strong>Der Autor</strong><img alt="" class="image-right" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/20180711045538_Bjorn-Headshot.jpg" width="100" height="112">
+<p>Bjorn Ryden (Senior Produktmanager, Vibration und Leistungssensoren) 
+verfügt über mehr als 20&nbsp;Jahre Erfahrung in der Sensorindustrie und
+ war über acht Jahre bei <i>AMETEK Aerospace</i> als <i>Senior Design Engineer</i> für die Entwicklung spezieller Sensoren verantwortlich. Vor seiner Zeit bei <i>TE Connectivity</i> war er als <i>Senior Applications Engineer</i> und Produktmanager bei <i>Meggitt Sensors</i> tätig. Bei <i>TE Connectivity</i>
+ arbeitete er in den letzten 12&nbsp;Jahren in verschiedenen Positionen 
+mit zunehmender Verantwortung innerhalb des Produktmanagement-Teams. 
+Bjorn Ryden besitzt Titel eines BS in Maschinenbau des <i>Worcester Polytechnic Institute</i> in Massachusetts, USA.</p>
+&nbsp;
+
+<hr>&nbsp;
+<p><i>TE Connectivity Ltd</i>. ist weltweit führend in der 
+Sensor-Technologie und -Fertigung mit einem Umsatz von 
+13&nbsp;Milliarden US-Dollar, ein Wert, der eine sicherere, 
+nachhaltigere, produktivere und vernetztere Zukunft gewährleistet. Seit 
+mehr als 75&nbsp;Jahren haben unsere Vernetzungs- und Sensorlösungen, 
+die sich in den rauesten Umgebungen bewährt haben, Fortschritte in den 
+Bereichen Transport, Industrie, Medizintechnik, Energie, 
+Datenkommunikation und Haushalt ermöglicht. Mit 
+78.000&nbsp;Mitarbeitern, darunter mehr als 7.000&nbsp;Ingenieure, die 
+gemeinsam mit Kunden in fast 150&nbsp;Ländern arbeiten, sorgt <i>TE</i> dafür, dass JEDE VERBINDUNG ZÄHLT. Erfahren Sie mehr unter <a href="http://www.te.com/" target="_blank">http://www.te.com</a> und auf <i>LinkedIn, Facebook, WeChat</i> und <i>Twitter</i>.</p>
+<br>
+Dieses Advertorial erschien in der&nbsp;<a href="https://www.elektormagazine.de/magazine/elektor-66" target="_blank">Elektor Business Edition 3/2018</a>.<br>
+&nbsp; </div> <div class="hidden mobile-handler"> <div class="mobile-handler-more text-center">Mehr anzeigen</div> <div class="hidden mobile-handler-less text-center">Weniger anzeigen</div> <div identifier="advertisement1" class="advertisement hide-line-on-empty" ad="T.banners.mobile-content-block"></div> </div>  </div>     <div class="right"> <div class="Pagination c-margin-b-5"> <ul class="Pagination__list content-pagination c-theme">  <li class="Pagination__item c-arrow c-margin-r-10 c-disabled">   <a class="Pagination__link" href="https://www.elektormagazine.de/news/der-richtige-beschleunigungs-sensor-fur-jede-anwendung"> <i class="active icon icon-circle_left"></i> </a>   </li> <span>Page 1 / 1</span> <li class="Pagination__item c-arrow c-margin-l-10 c-disabled">  <a class="Pagination__link"> <i class="inactive icon icon-circle_right"></i> </a>  </li> </ul> </div> </div>  <div class="hidden mobile_socialmedia"> <div url="https://www.elektormagazine.de/news/der-richtige-beschleunigungs-sensor-fur-jede-anwendung" title="Der richtige Beschleunigungs-Sensor für jede Anwendung" class="share-direct shareContainer c-margin-t-10"> <ul class="list-inline"> <li id="fb" class="sharebut icon icon-facebook-simple"></li> <li id="tw" class="sharebut icon icon-twitter"></li> <li id="ma" class="sharebut icon icon-envelope"></li> <li id="li" class="sharebut icon icon-linkedin-simple"></li> </ul> </div> </div> </div> <div class="article__footer">  <div class="Article__related comment-line-top">  </div>    <a name="comments"></a>    <div class="Article__related">  </div>  <div> <h1>Code einbetten</h1> <div id="shareEmbedContainer"> <div> <input type="text" id="shareEmbed" placeholder="Klicken Sie auf den roten Button, um den Einbettungscode zu erhalten." onclick="$(this).select()"> </div> <div>  <input type="image" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/embed.png" class="embedImage" onclick='$("#shareEmbed").val("<iframe width=\"700\" height=\"600\" title=\"Share embed\" src=\"https://www.elektormagazine.de/embed/news/der-richtige-beschleunigungs-sensor-fur-jede-anwendung\" frameborder=\"0\" allowfullscreen=\"\"></iframe>");$("#shareEmbed").select()'>  </div> </div> </div> </div> <br> <br> </article>  </div>   <aside class="Aside vue-target"><div name="RightBar"><div class="article__info"><h2 class="h2 PageDescription__title c-font-primary c-margin-b-0">Artikel-Infos</h2> <b><span class="meta-date"> 11.07.2018 <meta itemprop="datePublished" content="2018-07-11T10:20:00+02:00"> <meta itemprop="dateModified" content="2021-02-25T13:37:39+01:00"></span></b> <div><span itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person" class="meta-author"> Von <a href="https://www.elektormagazine.de/authors/2/elektor-team"><b><u><span itemprop="name">Elektor Team</span></u></b></a></span>  über <span class="tags-category"><a href="https://www.elektormagazine.de/categories/advertorial"><b><u>Advertorial</u></b></a></span> <div class="rightbar-page"><div class="Pagination c-margin-b-5"><ul class="Pagination__list content-pagination c-theme"><li class="Pagination__item c-arrow c-margin-r-10 c-disabled"><a href="https://www.elektormagazine.de/news/der-richtige-beschleunigungs-sensor-fur-jede-anwendung" class="Pagination__link"><i class="active icon icon-circle_left"></i></a></li> <span>Page 1 / 1</span> <li class="Pagination__item c-arrow c-margin-l-10 c-disabled"><a class="Pagination__link"><i class="inactive icon icon-circle_right"></i></a></li></ul></div></div> <div class="sponsored_title">Gesponserter Beitrag</div> <div class="Aside__line c-margin-t-0"></div> <div class="tags c-margin-t-10 c-margin-b-10"><div class="TagList"><a href="https://www.elektormagazine.de/select/sensoren" class="TagList__tag tag select-tag c-font-bold c-font-uppercase c-font-smaller c-font-secondary "><i class="icon icon-select"></i> Sensoren</a> <a href="https://www.elektormagazine.de/tags/elektorbusiness" class="TagList__tag tag c-font-bold c-font-uppercase c-font-smaller c-font-secondary ">Elektor Business</a> <a href="https://www.elektormagazine.de/tags/te-connectivity" class="TagList__tag tag c-font-bold c-font-uppercase c-font-smaller c-font-secondary ">TE Connectivity</a></div></div> <div class="subscribe"> Wollen Sie über bestimmte Themen auf dem Laufenden gehalten werden? Abonnieren Sie jetzt <strong>Tags</strong>! </div> <div class="Aside__line Aside__line c-margin-b-0 c-margin-t-0"></div> <div class="Aside__info"><img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/conversation.svg"> 0 &nbsp;&nbsp;&nbsp;<a href="#comments" class="btn-primary Aside__info-comments"><i class="icon icon-user"></i> Jetzt mitdiskutieren! </a></div> <div class="Aside__line Aside__line c-margin-b-0 c-margin-t-0"></div> <div class="Aside__info"><img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/download-small.svg"> 0 Download(s)</div> <div class="Aside__line Aside__line c-margin-b-0 c-margin-t-0"></div> <div class="Aside__info"><img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/shopping-cart-small.svg"> 0 Zugehörige Produkte</div> <div class="Aside__separator "></div> <div url="https://www.elektormagazine.de/news/der-richtige-beschleunigungs-sensor-fur-jede-anwendung" title="Der richtige Beschleunigungs-Sensor für jede Anwendung" class="share-direct shareContainer c-margin-t-10"><ul class="list-inline"><li id="fb" class="sharebut icon icon-facebook-simple"></li> <li id="tw" class="sharebut icon icon-twitter"></li> <li id="ma" class="sharebut icon icon-envelope"></li> <li id="li" class="sharebut icon icon-linkedin-simple"></li></ul></div> <div identifier="advertisement2" ad="T.banners. article-aside" class="advertisement"></div></div></div><div class="Aside__separator "></div> <div class="Aside__no_background"><h4>Select Page</h4> <ul class="list-unstyled c-margin-l-10 c-margin-r-10"><li><a href="https://www.elektormagazine.de/select/sensoren" class="select__page_link"> Weitere Artikel zu <span class="red">Sensoren</span></a></li></ul></div> <div class="Aside__separator"></div> <div class="Aside__related__articles"><h4>Ähnliche Artikel</h4> <div><a href="https://www.elektormagazine.de/news/elektrische-antriebe-in-der-luftfahrt/"><div class="Aside__box job"><div class="image"><img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/httpswww_004.webp" alt="Elektrische Antriebe in der Luftfahrt"></div> <div class="content"><h3>Elektrische Antriebe in der Luftfahrt</h3></div></div></a> <div class="Aside__line"></div> <a href="https://www.elektormagazine.de/news/optical-bonding-von-e-paper-displays/"><div class="Aside__box job"><div class="image"><img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/httpswww_005.webp" alt="Optical Bonding von E-Paper Displays"></div> <div class="content"><h3>Optical Bonding von E-Paper Displays</h3></div></div></a> <div class="Aside__line"></div> <a href="https://www.elektormagazine.de/news/microchip-kundigt-raumfahrtqualifizierte-strahlungsfeste-cots-leistungswandler-an/"><div class="Aside__box job"><div class="image"><img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/httpswww.webp" alt="Microchip kündigt raumfahrtqualifizierte, strahlungsfeste COTS-Leistungswandler an"></div> <div class="content"><h3>Microchip kündigt raumfahrtqualifizierte, strahlungsfeste COTS-Leistungswandler an</h3></div></div></a> <div class="Aside__line"></div> <a href="https://www.elektormagazine.de/news/fertigungsgerechtes-design-leicht-gemacht/"><div class="Aside__box job"><div class="image"><img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/httpswww_003.webp" alt="Fertigungsgerechtes Design leicht gemacht"></div> <div class="content"><h3>Fertigungsgerechtes Design leicht gemacht</h3></div></div></a></div></div> <div><div class="Aside__separator "></div></div> <div class="Aside__separator "></div> <div class="collapsable Aside__background"><h4 class="c-margin-l-10 c-margin-r-10">Newsletter <a href="#"><i class="icon icon-chevron-up"></i> <i class="icon icon-chevron-down hidden"></i></a></h4> <div identifier="advertisement3" ad="83" class="advertisement hidden newsletter active"><div bpzid="2432" style="" class="_waitress internalBanner"><div style="position:absolute;z-index:1;height:153px;width:336px;background-color:transparent;cursor:pointer" onclick="window.location.href='https://www.elektormagazine.de/waitress/follow/2432'">&nbsp;</div><a href="https://www.elektormagazine.de/waitress/follow/2432" target="_self">  <img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/httpswww_009.webp" alt="" style="max-height:153px;border:none;" width="336px">  </a> </div></div> <div class="Aside__separator "></div></div> <div><div identifier="advertisement4" ad="80" class="advertisement hide-line-on-empty"></div> <div class="Aside__separator"></div></div> <div class="Aside__background"><div identifier="advertisement5" ad="81" class="advertisement hide-line-on-empty"></div> <div class="Aside__separator "></div></div> <div class="collapsable Aside__background"><h4 class="c-margin-l-10 c-margin-r-10">Neueste Kommentare <a href="#"><i class="icon icon-chevron-up"></i> <i class="icon icon-chevron-down hidden"></i></a></h4> <div class="hidden c-margin-l-10 c-margin-r-10 active"><div class="Aside__commentContainer"><a href="https://www.elektormagazine.de/news/translation-thomas-secure-boot-solution-for-raspberry-pi"><div class="Aside__box comments"><div style="background-image: url(&quot;https://cdn.xingosoftware.com/elektor/images/fetch/dpr_1,w_238,h_238,c_fit/https%3A%2F%2Fwww.elektormagazine.de%2Fassets%2Fupload%2Fimg%2Fpartial%2Fsquare%2Fa85d180f86431bbc8537700b75d6e137.png&quot;);"></div> <div class="content__teaser">natürlich kann man die Karte tauschen - z.B. gegen...</div></div></a> <div class="Aside__line comment"></div> <a href="https://www.elektormagazine.de/news/translation-thomas-secure-boot-solution-for-raspberry-pi"><div class="Aside__box comments"><div style="background-image: url(&quot;https://cdn.xingosoftware.com/elektor/images/fetch/dpr_1,w_238,h_238,c_fit/https%3A%2F%2Fwww.elektormagazine.de%2Fassets%2Fupload%2Fimg%2Fpartial%2Fsquare%2F18ac0a993ada36308d6fdd6d97ca21d3.png&quot;);"></div> <div class="content__teaser">Dieser Ansatzt ist allem Anschein nach ein wirksam...</div></div></a> <div class="Aside__line comment"></div> <a href="https://www.elektormagazine.de/news/hands-on-the-parallax-propeller-2-part-3-blink-an-led"><div class="Aside__box comments"><div style="background-image: url(&quot;https://cdn.xingosoftware.com/elektor/images/fetch/dpr_1,w_238,h_238,c_fit/https%3A%2F%2Fwww.elektormagazine.de%2Fassets%2Fupload%2Fimg%2Fpartial%2Fsquare%2F18dd3fda37dcb8d7bba40e41f08eba4c.png&quot;);"></div> <div class="content__teaser">Wenn Ihnen nur Interpunktions-Regeln fehlen würden...</div></div></a></div> <img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/comment_callout.png" class="Aside_comments_callout"></div> <div class="Aside__separator "></div></div> <div class="collapsable Aside__background"><h4 class="c-margin-l-10 c-margin-r-10">Meistgelesen <a href="#"><i class="icon icon-chevron-up"></i> <i class="icon icon-chevron-down hidden"></i></a></h4> <div class="c-margin-l-10 c-margin-r-10 hidden c-margin-b-5 active"><a href="https://www.elektormagazine.de/news/platinendruck-mit-voltera-v-one-und-greatscott/"><div class="Aside__box trending"><div class="image"><img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/httpswww_010.webp" alt="Platinendruck mit Voltera V-One und GreatScott!"></div> <div class="content"><h3>Platinendruck mit Voltera V-One und GreatScott!</h3></div></div></a> <div class="Aside__line"></div> <a href="https://www.elektormagazine.de/news/reviewmikroskopandonstarad407/"><div class="Aside__box trending"><div class="image"><img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/httpswww_002.webp" alt="Review: Mikroskop Andonstar AD407"></div> <div class="content"><h3>Review: Mikroskop Andonstar AD407</h3></div></div></a> <div class="Aside__line"></div> <a href="https://www.elektormagazine.de/news/dcstromzange-selbst-gebaut/"><div class="Aside__box trending"><div class="image"><img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/httpswww_007.webp" alt="DC-Stromzange selbst gebaut"></div> <div class="content"><h3>DC-Stromzange selbst gebaut</h3></div></div></a> <div class="Aside__line"></div> <a href="https://www.elektormagazine.de/news/get-started-esp32-microcontroller/"><div class="Aside__box trending"><div class="image"><img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/httpswww_006.webp" alt="Erste Schritte mit dem ESP32-Mikrocontroller"></div> <div class="content"><h3>Erste Schritte mit dem ESP32-Mikrocontroller</h3></div></div></a> <div class="Aside__line"></div> <a href="https://www.elektormagazine.de/news/gps-fr-den-raspberry-pi/"><div class="Aside__box trending"><div class="image"><img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/httpswww_008.webp" alt="GPS für den Raspberry Pi"></div> <div class="content"><h3>GPS für den Raspberry Pi</h3></div></div></a></div> <div class="Aside__separator "></div></div> <div class="Aside__background"><div identifier="advertisement6" ad="60" class="advertisement hide-line-on-empty"><div bpzid="5493" style="" class="_waitress internalBanner"><div style="position:absolute;z-index:1;height:280px;width:336px;background-color:transparent;cursor:pointer" onclick="window.open('https://www.elektormagazine.de/waitress/follow/5493')">&nbsp;</div><a href="https://www.elektormagazine.de/waitress/follow/5493" target="_blank"><img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/NNk2eCoqqSxmiQo6hG1Nt1M6820GXSXi.gif" style="max-height:280px;border:none;" width="336px"></a></div></div> <div class="Aside__separator "></div></div> <div><div identifier="advertisement7" ad="82" class="advertisement"></div></div></div></aside>  </div> <div class="vue-target"><section><div id="login-modal" tabindex="-1" role="dialog" class="modal"><div role="document" class="modal-dialog modal-sm"><div class="modal-content"><div class="modal-header text-center"><h1 class="mb-10">Login<button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button></h1> <p><span id="explanation">Noch kein Account?</span> <u data-dismiss="modal" class="c-font-black"><a href="https://www.elektormagazine.de/account/register" target="_blank">Jetzt registrieren!</a></u></p></div> <form id="loginForm"><div class="modal-body"><p></p><div class="form-group"><div class="form-error-holder"></div></div> <div class="form-group row"><label for="email" class="col-sm-4 mt-10 col-form-label">E-Mail</label> <div class="col-sm-8"><input type="text" id="login-email" name="email" class="form-control"></div></div> <div class="form-group row"><label for="password" class="col-sm-4 mt-10 col-form-label">Passwort</label> <div class="col-sm-8"><input type="password" id="login-password" name="password" class="form-control"></div></div> <div class="form-check pt-5"><input type="checkbox" value="" id="login-remember" class="form-check-input"> <label for="remember" class="form-check-label"> Eingeloggt bleiben </label></div> <p></p></div> <div class="modal-footer text-center "><div class="text-center "><button type="submit" class="btn c-font-white c-btn-secondary-color btn-rounded c-font-uppercase">Login</button> <br> <button class="btn c-font-black btn-outline-light btn-rounded c-font-uppercase">Passwort vergessen?</button></div></div></form></div></div></div> <div id="forgot-pwd-modal" tabindex="-1" role="dialog" class="modal"><div role="document" class="modal-dialog modal-sm"><div class="modal-content"><div class="modal-header text-center"><h1 class="mb-10">Passwort vergessen?<button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button></h1> <p>Bitte geben Sie Ihre bei der Registrierung hinterlegte E-Mail-Adresse ein, um Ihr Passwort zurückzusetzen.</p></div> <form id="forgotPwdForm" onsubmit="return false"><div class="modal-body"><p></p><div class="form-group"><div class="form-error-holder"></div></div> <div class="form-group row"><label for="email" class="col-sm-4 mt-10 col-form-label">E-Mail</label> <div class="col-sm-8"><input type="text" id="email" name="email" class="form-control"></div></div> <p></p></div> <div class="modal-footer text-center "><div class="text-center "><button class="btn c-font-white c-btn-secondary-color btn-rounded c-font-uppercase ">Passwort zurücksetzen</button></div></div></form></div></div></div> <div id="register-modal" tabindex="-1" role="dialog" class="modal"><div role="document" class="modal-dialog modal-sm"><div class="modal-content"><div class="modal-header text-center"><h1 class="mb-10">Zur Registrierung<button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button></h1> <p>Sie haben schon ein Account!? <a href="https://www.elektormagazine.de/account/login" class="red">Klicken Sie hier, um sich einzuloggen</a>.</p> <p></p></div> <form id="registerForm" onsubmit="return false"><div class="modal-body"><div class="form-group"><div class="form-error-holder"></div></div> <div class="form-group row"><label for="first_name" class="col-sm-4 mt-10 col-form-label">Vorname *</label> <div class="col-sm-8"><input type="text" id="first_name" name="first_name" class="form-control"></div></div> <div class="form-group row"><label for="middle_name" class="col-sm-4 mt-10 col-form-label">Zweiter Vorname</label> <div class="col-sm-8"><input type="text" id="middle_name" class="form-control"></div></div> <div class="form-group row"><label for="last_name" class="col-sm-4 mt-10 col-form-label">Nachname *</label> <div class="col-sm-8"><input type="text" id="last_name" name="last_name" class="form-control"></div></div> <div class="form-group row"><label for="nickname" class="col-sm-4 mt-10 col-form-label">Nickname</label> <div class="col-sm-8"><input type="text" id="nickname" class="form-control"></div></div> <div class="form-group row"><label for="email" class="col-sm-4 mt-10 col-form-label">E-Mail *</label> <div class="col-sm-8"><input type="text" id="email" name="email" class="form-control"></div></div> <div class="form-group row"><label for="password" class="col-sm-4 mt-10 col-form-label">Passwort *</label> <div class="col-sm-8"><input type="password" id="password" name="password" class="form-control"></div></div> <div class="form-group row"><label for="confirm_password" class="col-sm-4 mt-10 col-form-label">Passwort bestätigen *</label> <div class="col-sm-8"><input type="password" id="password_confirmation" name="passwordConfirm" class="form-control"></div></div></div> <div class="modal-footer text-center "><div class="text-center "><button class="btn c-font-white c-btn-secondary-color btn-rounded c-font-uppercase ">Account erstellen</button></div></div></form></div></div></div></section></div> </div> <footer class="mt-20 c-layout-footer c-layout-footer-3"> <div class="c-footer-newsletter"> <div class="container"> <div class="c-footer-newsletter-message"> <span><a href="https://www.elektormagazine.de/pages/newsletter-de">Abonnieren</a></span><a href="https://www.elektormagazine.de/pages/newsletter-de"> Sie unseren Newsletter </a></div><a href="https://www.elektormagazine.de/pages/newsletter-de"> <div class="c-footer-newsletter-img"> <img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/20200410172259_visual-mail-banner.png" alt="newsletter"> </div> </a></div><a href="https://www.elektormagazine.de/pages/newsletter-de"> </a></div><a href="https://www.elektormagazine.de/pages/newsletter-de"> </a><div class="c-footer-magazine"><a href="https://www.elektormagazine.de/pages/newsletter-de"> </a><div class="container"><a href="https://www.elektormagazine.de/pages/newsletter-de"> </a><div class="row"><a href="https://www.elektormagazine.de/pages/newsletter-de"> <div class="col-md-5"> <img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/20200410172259_visual-magazines.png" alt="magazine" width="100%"> </div> </a><div class="col-md-7 c-footer-magazines-message"><a href="https://www.elektormagazine.de/pages/newsletter-de"> <div>
+ Elektor ist die weltweit führende Quelle für wichtige elektrotechnische
+ Informationen und Elektroniklösungen für Ingenieure, professionelle 
+Hersteller, Start-ups und Unternehmen, die diese interessieren. Unsere 
+Multichannel-Werbe- und Marketinglösungen ermöglichen es 
+Elektronikmarken, ihre Geschichte effektiv, schnell und kostengünstig zu
+ erzählen, Leads zu generieren und ihre Umsätze zu steigern. 
+Kontaktieren Sie Elektor noch heute für Werbeinformationen und um mehr 
+über unsere internationale Elektronik-Community zu erfahren! </div> </a><div class="text-center"><a href="https://www.elektormagazine.de/pages/newsletter-de"> </a><a href="https://www.elektormagazine.de/account/subscription/add"> <span> Mitglied werden! </span> </a> </div> </div> </div> </div> </div> <div class="c-prefooter"> <div class="container"> <div class="row">   <div class="col-md-20_5p col-sm-6 col-xs-12 col-collapseable c-footer-menu"> <a data-toggle="collapse" href="#collapse_0"> <div class="panel-heading hidden-md hidden-lg"> <strong>Service</strong> </div> </a> <ul id="collapse_0" class="list-inline panel-collapse collapse">  <li class="mb-15 c-font-uppercase hidden-xs hidden-sm"><strong>Service</strong></li>    <li class="mb-2"><a href="https://www.elektormagazine.de/pages/nutzungsbedingungen"><i class="arrow_right"></i>Nutzungsbedingungen</a></li>    <li class="mb-2"><a href="https://www.elektormagazine.de/pages/copyright-de"><i class="arrow_right"></i>Copyright</a></li>    <li class="mb-2"><a href="https://www.elektormagazine.de/pages/mediadaten"><i class="arrow_right"></i>Mediadaten</a></li>    <li class="mb-2"><a href="https://www.elektormagazine.de/pages/impressum"><i class="arrow_right"></i>Impressum</a></li>     </ul> </div>  <div class="col-md-20_5p col-sm-6 col-xs-12 col-collapseable c-footer-menu"> <a data-toggle="collapse" href="#collapse_1"> <div class="panel-heading hidden-md hidden-lg"> <strong>Elektor World</strong> </div> </a> <ul id="collapse_1" class="list-inline panel-collapse collapse">  <li class="mb-15 c-font-uppercase hidden-xs hidden-sm"><strong>Elektor World</strong></li>    <li class="mb-2"><a href="https://www.elektormagazine.de/magazine"><i class="arrow_right"></i>Elektor MAGAZINE</a></li>    <li class="mb-2"><a href="https://www.elektormagazine.de/labs"><i class="arrow_right"></i>Elektor LABS</a></li>    <li class="mb-2"><a href="https://www.elektor.de/?__hstc=181156344.db9499d3fed918015d29d441180cca17.1614696122784.1614696122784.1614696122784.1&amp;__hssc=181156344.1.1614696122785&amp;__hsfp=3311043726"><i class="arrow_right"></i>Elektor SHOP</a></li>     </ul> </div>   <div class="col-md-29_5p col-sm-4 col-xs-12"> <ul class="list-inline"> <li class="mb-15 c-font-uppercase"><strong>SOCIAL MEDIA</strong></li> <li class="social-media-icons"> <a target="_blank" href="https://www.facebook.com/ElektorDE"><img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/facebook.svg" alt="facebook" height="25"></a> &nbsp;<a target="_blank" href="https://twitter.com/ElektorDE"><img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/twitter.svg" alt="twitter" height="25"></a> &nbsp;<a target="_blank" href="https://www.instagram.com/elektorlabs/" alt="instagram"><img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/instagram.svg" height="25"></a> &nbsp;<a target="_blank" href="https://www.youtube.com/user/ElektorIM"><img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/youtube.svg" alt="youtube" height="25"></a> </li> </ul> <br> <ul class="list-inline hidden-xs hidden-sm"> <li class="mb-15 c-font-uppercase"><strong>SICHER BEZAHLEN</strong></li> <li class="social-media-icons"> <img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/visa.svg" alt="visa" height="20">&nbsp;
+<img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/mastercard.svg" alt="mastercard" height="25">&nbsp;
+<img src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/paypal.svg" alt="paypal" height="20">&nbsp; </li> </ul> </div> <div class="col-md-29_5p col-sm-4 hidden-xs hidden-sm"> <ul class="list-inline"> <li class="mb-15 c-font-uppercase"><strong>JETZT <span style="color:#E4231E;">GRATIS</span> MITGLIED WERDEN UND <span style="color:#E4231E;">NEWSLETTER</span> ERHALTEN!</strong></li> <li> <div><a href="https://www.elektormagazine.de/pages/newsletter-de" target="_blank"><img alt="" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/newsletter.png" style="height:91px;margin-left: 40px;"></a></div> </li> </ul> </div> </div> </div> </div> <div class="text-center about-title"> <strong><strong>DAS <span style="color:#5388C6;">ELEKTOR</span> UNIVERSUM</strong></strong> <hr> </div> <div class="text-center"> <nobr><a target="_blank" href="https://makemagazine.nl/"><img style="height:25px" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/make.svg"></a>&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://elektormagazine.com/?__hstc=181156344.db9499d3fed918015d29d441180cca17.1614696122784.1614696122784.1614696122784.1&amp;__hssc=181156344.1.1614696122785&amp;__hsfp=3311043726"><img style="height:40px" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/elektor.svg"></a></nobr> <nobr><a target="_blank" href="https://magpi.nl/"><img style="height: 36px; margin-top: 9px;" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/magpi.svg"></a><a target="_blank" href="https://elektor.de/?__hstc=181156344.db9499d3fed918015d29d441180cca17.1614696122784.1614696122784.1614696122784.1&amp;__hssc=181156344.1.1614696122785&amp;__hsfp=3311043726"><img style="height:40px" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/elektorstore.svg"></a></nobr> </div> </footer> <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"> <div class="pswp__bg"></div> <div class="pswp__scroll-wrap"> <div class="pswp__container"> <div class="pswp__item"></div> <div class="pswp__item"></div> <div class="pswp__item"></div> </div> <div class="pswp__ui pswp__ui--hidden"> <div class="pswp__top-bar"> <div class="pswp__counter"></div> <button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title="Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button> <div class="pswp__preloader"> <div class="pswp__preloader__icn"> <div class="pswp__preloader__cut"> <div class="pswp__preloader__donut"></div> </div> </div> </div> </div> <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"> <div class="pswp__share-tooltip"></div> </div> <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"> </button> <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"> </button> <div class="pswp__caption"> <div class="pswp__caption__center"></div> </div> </div> </div> </div> <script type="text/javascript">
+  var site = "https://www.elektormagazine.de/";
+  var siteshort = "www.elektormagazine.de";
+  var twitterUsername = '@ElektorDE';
+
+  var translations = {
+    confirm_delete_title: "Sind Sie sicher?",
+    confirm_delete_text: "Es wird nicht mehr m\u00f6glich sein, die Datei wiederherzustellen.",
+    confirm_delete_button: "Ja, ich m\u00f6chte es l\u00f6schen.",
+    confirm_cancel_button: "Abbrechen",
+    not_authorized_message: "Sie sind nicht autorisiert, diese Aktion durchzuf\u00fchren.",
+    account_links_empty: "Links hinzuf\u00fcgen",
+    account_links_add: "Link hinzuf\u00fcgen",
+    account_links_edit: "\u00c4ndern",
+    account_links_delete: "L\u00f6schen",
+    account_links_cancel: "Abbrechen",
+    account_links_save: "Speichern",
+    account_links_url: "Geben Sie eine URL ein...",
+    account_links_description: "Beschreibung",
+    account_links_type: "Typ",
+    account_links_type_empty: "Linktyp ausw\u00e4hlen",
+    account_add_weblink: "Weblink hinzuf\u00fcgen",
+    more_tags: "Mehr anzeigen",
+    less_tags: "Weniger anzeigen"
+  }
+
+  var vueLang = {
+      locale: 'de',
+      messages: {
+        de: {
+          comments: {"add-attachment":"Download hinzuf\u00fcgen","add-comment":"Kommentar schreiben","attachment-drop-here":"Datei(en) hochladen","attachment-drop-here-description":"PDF, PNG, JPG, GIF, BMP, ZIP und TAR sind erlaubt. Multi-Upload ist m\u00f6glich (max. Dateigr\u00f6\u00dfe: 5 MB).","attachments-count":"Attachment(s)","change-avatar":"Profilbild \u00e4ndern","close":"Schlie\u00dfen","collapse-full-comment":"Weniger anzeigen","comments-count":"Kommentar(e)","comments-title":"Kommentare","count":"Kommentar|Kommentare","create":"Kommentar abschicken","delete":"L\u00f6schen","delete-label":"L\u00f6schen","deleted-message":"Kommentar wurde gel\u00f6scht.","edit":"Kommentar \u00e4ndern","edit-label":"\u00c4ndern","edit-project-update":"Projektupdate \u00e4ndern","headline":"Diskussion","loading":"Kommentare werden geladen...","login-to-upload":"Sie m\u00fcssen eingeloggt sein, um Dateien hochzuladen.","placeholder-comment":"Kommentar schreiben...","placeholder-title":"Titel eingeben...","read-full-comment":"Kommentare anzeigen","reply":"Antworten","reply-placeolder":"Antworten","save":"Speichern","send":"Senden Sie","show-all":"Mehr anzeigen","show-more":"Mehr anzeigen","upload-file":"Datei hochladen","video":"YouTube\/Vimeo Video"}
+        },
+      },
+  }
+</script>
+
+
+<script src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/js.txt"></script>
+<script type="text/javascript" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/jsapi.txt"></script>
+
+<script src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/bootstrap.js" type="text/javascript"></script>
+<script type="text/javascript" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/waitress.js"></script>
+<script type="text/javascript" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/app-03416029eb.js"></script>
+<script type="text/javascript" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/ping-a4e1e21c88.js"></script>
+<script type="text/javascript" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/ads-3190e291fa.js"></script>
+<script type="text/javascript" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/app-205e4d86f5.js"></script>
+
+
+
+
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async="" defer="defer" src="Der%20richtige%20Beschleunigungs-Sensor%20f%C3%BCr%20jede%20Anwendung%20Elektor%20Magazine-Dateien/4975083.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<script>
+ $('.hidden__mobile_more').click(function(){ $('.hidden__mobile_more').remove(); $('.mobile__hidden').removeClass('mobile__hidden'); }); 
+</script>
+<script>
+ $('.product__flex__more').click(function(){ if( $('.' + $(this).attr('id') ).hasClass('has__more') ){ $('.' + $(this).attr('id') ).removeClass('has__more'); $('#' + $(this).attr('id') + ' .product__flex__showmore').addClass('hidden'); $('#' + $(this).attr('id') + ' .product__flex__showless').removeClass('hidden'); }else{ $('.' + $(this).attr('id') ).addClass('has__more'); $('#' + $(this).attr('id') + ' .product__flex__showmore').removeClass('hidden'); $('#' + $(this).attr('id') + ' .product__flex__showless').addClass('hidden'); } }); 
+</script>
+<script>
+ $('.mobile-handler-more').click(function(){ $('.mobile-handler-more').addClass('hidden');$('.mobile-handler-less').removeClass('hidden');$('.article-body').removeClass('mobile-overflow'); }); $('.mobile-handler-less').click(function(){ $('.mobile-handler-less').addClass('hidden');$('.mobile-handler-more').removeClass('hidden');$('.article-body').addClass('mobile-overflow'); });
+</script>
+<script>
+ $('.hidden__mobile_more').click(function(){ $('.hidden__mobile_more').remove(); $('.mobile__hidden').removeClass('mobile__hidden'); }); 
+</script>
+<script>
+
+$(function(){
+  $.ajaxSetup({ headers: { 'X-CSRF-TOKEN' : 'dvzVvrmRx0LHXclE0U68SmxgtJe7bgg8wU3JvyS0', 'X-Requested-With' : 'XMLHttpRequest' } });
+});
+</script>
+
+
+ </div>  <script type="text/javascript" id="">void 0===window.canRunAds?dataLayer.push({event:"adBlocker",adBlockStatus:"active"}):dataLayer.push({event:"adBlocker"});</script></body></html>
