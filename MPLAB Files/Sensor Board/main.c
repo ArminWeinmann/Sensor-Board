@@ -41,34 +41,45 @@
     SOFTWARE.
 */
 
-#include "mcc_generated_files/mcc.h"
+#include "inc/pba_config.h"
 
 /*
                          Main application
  */
 void main(void)
 {
-    // initialize the device
-    SYSTEM_Initialize();
-
-    // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
-    // Use the following macros to:
-
-    // Enable the Global Interrupts
-    //INTERRUPT_GlobalInterruptEnable();
-
-    // Enable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptEnable();
-
-    // Disable the Global Interrupts
-    //INTERRUPT_GlobalInterruptDisable();
-
-    // Disable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptDisable();
-
+    PBA_Init();
+    uint16_t a;
+    
     while (1)
     {
-        // Add your application code
+        TMR1H = 0;                
+        TMR1L = 0;                
+
+        RA7 = 1;                  
+        __delay_us(10);       
+        RA7 = 0;
+        
+        while(!RA6);        
+        TMR1_StartTimer();               
+        while(RA6);               
+        TMR1_StopTimer();               
+
+        a = (TMR1L | (TMR1H<<8));       
+        a = (a + 1) / 2;                
+        
+        if(a >= 2 && a <= 100)
+        {
+            OLED_Clear();
+            printf("Distance = %i", a);
+            printf("cm");
+        }
+        else
+        {
+            OLED_Clear();
+            printf("Out of Range");
+        }
+        __delay_ms(100);
     }
 }
 /**

@@ -1,0 +1,1988 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\Sensor_Board.production.o
+cinit CODE 0 51 51 2C 2
+text1 CODE 0 9D0 9D0 17 2
+text2 CODE 0 BE0 BE0 36 2
+text3 CODE 0 6A2 6A2 F3 2
+text4 CODE 0 1F3 1F3 170 2
+text5 CODE 0 D11 D11 59 2
+text6 CODE 0 A35 A35 1B 2
+text7 CODE 0 B2E B2E 29 2
+text8 CODE 0 C8A C8A 41 2
+text9 CODE 0 9E7 9E7 19 2
+text10 CODE 0 363 363 13A 2
+text11 CODE 0 DC5 DC5 60 2
+text12 CODE 0 B57 B57 2C 2
+text13 CODE 0 957 957 F 2
+text14 CODE 0 BB0 BB0 30 2
+text15 CODE 0 A88 A88 1C 2
+text16 CODE 0 F13 F13 ED 2
+text17 CODE 0 49D 49D 105 2
+text18 CODE 0 8C1 8C1 3 2
+text19 CODE 0 8BE 8BE 3 2
+text20 CODE 0 9B9 9B9 17 2
+text21 CODE 0 A6C A6C 1C 2
+text22 CODE 0 9A3 9A3 16 2
+text23 CODE 0 98E 98E 15 2
+text24 CODE 0 92A 92A 9 2
+text25 CODE 0 8F5 8F5 8 2
+text26 CODE 0 8ED 8ED 8 2
+text27 CODE 0 795 795 61 2
+text28 CODE 0 7F6 7F6 A 2
+text29 CODE 0 A50 A50 1C 2
+text30 CODE 0 CCB CCB 46 2
+text31 CODE 0 921 921 9 2
+text32 CODE 0 918 918 9 2
+text33 CODE 0 90F 90F 9 2
+text34 CODE 0 906 906 9 2
+text35 CODE 0 8FD 8FD 9 2
+text36 CODE 0 8E5 8E5 8 2
+text37 CODE 0 B0A B0A 24 2
+text38 CODE 0 B83 B83 2D 2
+text39 CODE 0 AE7 AE7 23 2
+text40 CODE 0 D6A D6A 5B 2
+text41 CODE 0 8DE 8DE 7 2
+text42 CODE 0 C16 C16 38 2
+text43 CODE 0 AA4 AA4 20 2
+text44 CODE 0 949 949 E 2
+text46 CODE 0 8CC 8CC 6 2
+text47 CODE 0 93C 93C D 2
+text48 CODE 0 E9A E9A 79 2
+text49 CODE 0 3 3 1 2
+text50 CODE 0 979 979 15 2
+text51 CODE 0 7D 7D 176 2
+text52 CODE 0 A00 A00 1A 2
+text53 CODE 0 966 966 13 2
+text54 CODE 0 8BB 8BB 3 2
+text55 CODE 0 AC4 AC4 23 2
+text56 CODE 0 C4E C4E 3C 2
+text57 CODE 0 8C8 8C8 4 2
+text58 CODE 0 2 2 1 2
+text59 CODE 0 8C4 8C4 4 2
+text60 CODE 0 A1A A1A 1B 2
+nvBANK1 BANK1 1 EB EB 5 1
+nvBANK2 BANK2 1 16A 16A 6 1
+nvBANK3 BANK3 1 1C0 1C0 4 1
+maintext CODE 0 E25 E25 75 2
+cstackCOMMON COMMON 1 70 70 A 1
+cstackBANK0 BANK0 1 20 20 50 1
+cstackBANK1 BANK1 1 C8 C8 1A 1
+inittext CODE 0 8D8 8D8 6 2
+stringtext1 STRCODE 0 5A2 5A2 100 2
+stringtext2 STRCODE 0 1000 1000 E 2
+stringtext3 STRCODE 0 100E 100E D 2
+stringtext4 STRCODE 0 101B 101B 3 2
+intentry CODE 0 4 4 4B 2
+bssBANK1 BANK1 1 A0 A0 28 1
+bssBANK2 BANK2 1 120 120 4A 1
+bssBANK3 BANK3 1 1A0 1A0 20 1
+idataBANK1 CODE 0 933 933 9 2
+dataBANK1 BANK1 1 E2 E2 9 1
+clrtext CODE 0 8D2 8D2 6 2
+bssCOMMON COMMON 1 7A 7A 4 1
+config CONFIG 4 8007 8007 5 2
+$C:\Users\bweina\AppData\Local\Temp\sabcxg.o
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 4F 4F 2 2
+config CONFIG 4 8007 8007 5 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 1C4-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-64F 1
+BANK3 1C4-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 800-8BA 2
+CONST 101E-1FFF 2
+ENTRY 800-8BA 2
+ENTRY 101E-1FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+SFR32 1000-106F 1
+SFR33 1080-10EF 1
+SFR34 1100-116F 1
+SFR35 1180-11EF 1
+SFR36 1200-126F 1
+SFR37 1280-12EF 1
+SFR38 1300-136F 1
+SFR39 1380-13EF 1
+SFR40 1400-146F 1
+SFR41 1480-14EF 1
+SFR42 1500-156F 1
+SFR43 1580-15EF 1
+SFR44 1600-166F 1
+SFR45 1680-16EF 1
+SFR46 1700-176F 1
+SFR47 1780-17EF 1
+SFR48 1800-186F 1
+SFR49 1880-18EF 1
+SFR50 1900-196F 1
+SFR51 1980-19EF 1
+SFR52 1A00-1A6F 1
+SFR53 1A80-1AEF 1
+SFR54 1B00-1B6F 1
+SFR55 1B80-1BEF 1
+SFR56 1C00-1C6F 1
+SFR57 1C80-1CEF 1
+SFR58 1D00-1D6F 1
+SFR59 1D80-1DEF 1
+SFR60 1E00-1E6F 1
+SFR61 1E80-1EEF 1
+SFR62 1F00-1F6F 1
+SFR63 1F80-1FEF 1
+STACK 2114-23EF 1
+CODE 800-8BA 2
+CODE 101E-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-64F 1
+BIGRAM 2000-23EF 1
+STRCODE 800-8BA 2
+STRCODE 101E-1FFF 2
+STRING 800-8BA 2
+STRING 101E-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Sensor_Board.production.o
+51 cinit CODE >11644:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+51 cinit CODE >11647:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+51 cinit CODE >11824:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+52 cinit CODE >11825:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+53 cinit CODE >11826:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+54 cinit CODE >11827:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+55 cinit CODE >11828:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+56 cinit CODE >11829:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+57 cinit CODE >11830:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+58 cinit CODE >11831:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+59 cinit CODE >11832:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+5A cinit CODE >11833:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+5D cinit CODE >11850:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+5E cinit CODE >11851:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+5F cinit CODE >11852:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+60 cinit CODE >11853:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+61 cinit CODE >11857:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+62 cinit CODE >11858:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+63 cinit CODE >11859:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+64 cinit CODE >11860:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+65 cinit CODE >11861:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+66 cinit CODE >11862:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+69 cinit CODE >11866:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+6A cinit CODE >11867:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+6B cinit CODE >11868:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+6C cinit CODE >11869:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+6D cinit CODE >11870:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+6E cinit CODE >11871:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+71 cinit CODE >11875:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+72 cinit CODE >11876:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+73 cinit CODE >11877:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+74 cinit CODE >11878:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+75 cinit CODE >11879:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+76 cinit CODE >11880:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+79 cinit CODE >11886:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+79 cinit CODE >11888:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+7A cinit CODE >11889:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+7B cinit CODE >11890:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+4 intentry CODE >52:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/interrupt_manager.c
+6 intentry CODE >55:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/interrupt_manager.c
+F intentry CODE >57:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/interrupt_manager.c
+12 intentry CODE >58:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/interrupt_manager.c
+13 intentry CODE >59:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/interrupt_manager.c
+17 intentry CODE >61:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/interrupt_manager.c
+1F intentry CODE >63:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/interrupt_manager.c
+22 intentry CODE >64:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/interrupt_manager.c
+23 intentry CODE >65:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/interrupt_manager.c
+2B intentry CODE >67:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/interrupt_manager.c
+2E intentry CODE >68:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/interrupt_manager.c
+2F intentry CODE >69:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/interrupt_manager.c
+37 intentry CODE >71:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/interrupt_manager.c
+3D intentry CODE >72:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/interrupt_manager.c
+3E intentry CODE >73:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/interrupt_manager.c
+46 intentry CODE >75:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/interrupt_manager.c
+4C intentry CODE >76:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/interrupt_manager.c
+4D intentry CODE >80:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/interrupt_manager.c
+4D intentry CODE >86:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/interrupt_manager.c
+A1A text60 CODE >240:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+A1A text60 CODE >242:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+A28 text60 CODE >243:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+A2E text60 CODE >245:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+A2F text60 CODE >247:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+A34 text60 CODE >248:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+8C4 text59 CODE >260:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+8C4 text59 CODE >261:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+8C7 text59 CODE >262:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+2 text58 CODE >250:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+8C8 text57 CODE >252:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+8C8 text57 CODE >255:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+8CA text57 CODE >256:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+8CB text57 CODE >258:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+C4E text56 CODE >216:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+C4E text56 CODE >219:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+C54 text56 CODE >221:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+C59 text56 CODE >222:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+C5F text56 CODE >223:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+C64 text56 CODE >226:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+C69 text56 CODE >227:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+C6F text56 CODE >228:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+C75 text56 CODE >231:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+C7F text56 CODE >232:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+C85 text56 CODE >233:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+C86 text56 CODE >234:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+C89 text56 CODE >238:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+AC4 text55 CODE >197:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+AC4 text55 CODE >201:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+ACB text55 CODE >203:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+AD8 text55 CODE >204:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+ADE text55 CODE >206:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+ADF text55 CODE >208:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+AE3 text55 CODE >209:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+AE4 text55 CODE >210:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+AE4 text55 CODE >212:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+AE6 text55 CODE >214:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+8BB text54 CODE >742:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+8BB text54 CODE >745:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+8BD text54 CODE >746:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+966 text53 CODE >565:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+966 text53 CODE >569:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+96B text53 CODE >572:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+971 text53 CODE >574:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+975 text53 CODE >575:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+976 text53 CODE >576:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+976 text53 CODE >578:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+978 text53 CODE >581:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A00 text52 CODE >583:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A01 text52 CODE >586:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A03 text52 CODE >589:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A0D text52 CODE >592:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A18 text52 CODE >596:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A19 text52 CODE >598:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+7D text51 CODE >235:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+7D text51 CODE >243:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+7F text51 CODE >247:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+84 text51 CODE >250:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+85 text51 CODE >251:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+87 text51 CODE >252:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+90 text51 CODE >255:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+92 text51 CODE >263:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+92 text51 CODE >265:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+96 text51 CODE >268:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+9A text51 CODE >269:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A1 text51 CODE >270:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A6 text51 CODE >272:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+AA text51 CODE >275:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+B0 text51 CODE >278:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+B4 text51 CODE >283:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+B5 text51 CODE >286:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+BB text51 CODE >289:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+BC text51 CODE >290:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+BC text51 CODE >293:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+BE text51 CODE >296:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+C4 text51 CODE >301:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+C4 text51 CODE >306:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+C7 text51 CODE >313:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+C7 text51 CODE >315:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+CC text51 CODE >317:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+D1 text51 CODE >318:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+D5 text51 CODE >319:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+D6 text51 CODE >323:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+E0 text51 CODE >326:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+E5 text51 CODE >330:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+E9 text51 CODE >331:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+EA text51 CODE >335:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+EF text51 CODE >341:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+EF text51 CODE >343:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+F4 text51 CODE >345:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+F9 text51 CODE >346:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+FD text51 CODE >347:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+FE text51 CODE >348:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+FE text51 CODE >352:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+FF text51 CODE >356:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+113 text51 CODE >359:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+114 text51 CODE >362:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+117 text51 CODE >383:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+11C text51 CODE >386:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+124 text51 CODE >387:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+12B text51 CODE >388:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+132 text51 CODE >414:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+135 text51 CODE >415:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+13A text51 CODE >418:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+13E text51 CODE >419:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+13F text51 CODE >428:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+13F text51 CODE >431:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+144 text51 CODE >434:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+149 text51 CODE >437:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+14B text51 CODE >440:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+14F text51 CODE >442:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+150 text51 CODE >446:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+158 text51 CODE >451:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+15C text51 CODE >454:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+162 text51 CODE >456:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+166 text51 CODE >457:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+167 text51 CODE >458:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+167 text51 CODE >466:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+16A text51 CODE >476:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+176 text51 CODE >481:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+176 text51 CODE >484:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+17B text51 CODE >488:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+180 text51 CODE >491:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+184 text51 CODE >494:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+186 text51 CODE >495:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+187 text51 CODE >496:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+187 text51 CODE >498:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+188 text51 CODE >499:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+18E text51 CODE >508:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+192 text51 CODE >511:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+194 text51 CODE >513:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+195 text51 CODE >518:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+1A2 text51 CODE >521:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+1A8 text51 CODE >528:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+1AA text51 CODE >531:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+1AF text51 CODE >532:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+1B0 text51 CODE >533:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+1B0 text51 CODE >538:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+1B2 text51 CODE >540:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+1B5 text51 CODE >544:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+1B7 text51 CODE >545:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+1B8 text51 CODE >551:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+1BC text51 CODE >552:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+1BD text51 CODE >558:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+1C1 text51 CODE >559:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+1C5 text51 CODE >560:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+1C6 text51 CODE >562:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+1F2 text51 CODE >563:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+979 text50 CODE >4:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul8.c
+97A text50 CODE >6:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul8.c
+97B text50 CODE >43:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul8.c
+97F text50 CODE >44:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul8.c
+983 text50 CODE >45:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul8.c
+985 text50 CODE >46:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul8.c
+987 text50 CODE >47:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul8.c
+98C text50 CODE >50:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul8.c
+98D text50 CODE >51:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul8.c
+3 text49 CODE >146:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+3 text49 CODE >149:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+E9A text48 CODE >169:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_systick.c
+E9A text48 CODE >173:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_systick.c
+E9B text48 CODE >175:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_systick.c
+EC8 text48 CODE >177:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_systick.c
+EE0 text48 CODE >178:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_systick.c
+F08 text48 CODE >182:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_systick.c
+F12 text48 CODE >183:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_systick.c
+93C text47 CODE >132:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+93C text47 CODE >136:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+943 text47 CODE >138:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+948 text47 CODE >140:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+8CC text46 CODE >121:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+8CC text46 CODE >124:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+8CE text46 CODE >127:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+8D1 text46 CODE >130:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+949 text44 CODE >79:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/spi1.c
+94B text44 CODE >82:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/spi1.c
+94D text44 CODE >84:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/spi1.c
+951 text44 CODE >86:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/spi1.c
+951 text44 CODE >88:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/spi1.c
+955 text44 CODE >90:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/spi1.c
+956 text44 CODE >91:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/spi1.c
+AA4 text43 CODE >325:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+AA6 text43 CODE >326:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+AB1 text43 CODE >327:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+AB6 text43 CODE >328:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+AC3 text43 CODE >329:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+C16 text42 CODE >105:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+C16 text42 CODE >106:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+C18 text42 CODE >107:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+C21 text42 CODE >108:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+C23 text42 CODE >109:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+C27 text42 CODE >110:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+C2B text42 CODE >111:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+C2F text42 CODE >112:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+C33 text42 CODE >114:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+C37 text42 CODE >115:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+C3B text42 CODE >117:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+C3F text42 CODE >118:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+C43 text42 CODE >119:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+C47 text42 CODE >120:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+C4B text42 CODE >122:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+C4D text42 CODE >123:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+8DE text41 CODE >644:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+8DE text41 CODE >646:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+8E4 text41 CODE >652:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+D6A text40 CODE >654:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+D6A text40 CODE >655:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+D6C text40 CODE >661:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+D71 text40 CODE >663:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+D79 text40 CODE >665:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+D82 text40 CODE >666:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+D8B text40 CODE >667:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+D95 text40 CODE >668:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+D9A text40 CODE >671:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+DA0 text40 CODE >674:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+DA6 text40 CODE >679:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+DA7 text40 CODE >682:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+DAD text40 CODE >685:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+DAF text40 CODE >691:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+DB5 text40 CODE >695:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+DBF text40 CODE >697:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+DC2 text40 CODE >702:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+DC4 text40 CODE >706:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+AE7 text39 CODE >721:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+AE7 text39 CODE >722:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+AE9 text39 CODE >727:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+AF7 text39 CODE >728:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+B00 text39 CODE >729:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+B09 text39 CODE >730:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+B83 text38 CODE >600:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+B83 text38 CODE >601:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+B85 text38 CODE >609:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+B8A text38 CODE >611:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+B9B text38 CODE >612:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+BA8 text38 CODE >613:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+BA9 text38 CODE >616:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+BAF text38 CODE >619:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+B0A text37 CODE >64:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_rtc.c
+B0A text37 CODE >65:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_rtc.c
+B0F text37 CODE >67:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_rtc.c
+B17 text37 CODE >68:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_rtc.c
+B27 text37 CODE >69:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_rtc.c
+B2D text37 CODE >70:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_rtc.c
+8E5 text36 CODE >65:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/adc.c
+8E5 text36 CODE >70:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/adc.c
+8E8 text36 CODE >73:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/adc.c
+8EA text36 CODE >76:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/adc.c
+8EB text36 CODE >79:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/adc.c
+8EC text36 CODE >81:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/adc.c
+8FD text35 CODE >272:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+8FD text35 CODE >273:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+905 text35 CODE >274:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+906 text34 CODE >264:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+906 text34 CODE >265:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+90E text34 CODE >266:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+90F text33 CODE >268:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+90F text33 CODE >269:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+917 text33 CODE >270:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+918 text32 CODE >280:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+918 text32 CODE >281:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+920 text32 CODE >282:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+921 text31 CODE >276:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+921 text31 CODE >277:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+929 text31 CODE >278:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+CCB text30 CODE >88:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+CCB text30 CODE >91:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+CCD text30 CODE >92:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+CD5 text30 CODE >93:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+CD7 text30 CODE >94:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+CDF text30 CODE >98:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+CE2 text30 CODE >101:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+CE4 text30 CODE >104:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+CE6 text30 CODE >107:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+CE8 text30 CODE >110:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+CE9 text30 CODE >113:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+CF1 text30 CODE >114:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+CF9 text30 CODE >115:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+D01 text30 CODE >117:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+D03 text30 CODE >120:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+D04 text30 CODE >121:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+D05 text30 CODE >122:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+D0B text30 CODE >124:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+D0C text30 CODE >125:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+D0D text30 CODE >126:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+D0E text30 CODE >129:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+D10 text30 CODE >130:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+A50 text29 CODE >198:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A50 text29 CODE >200:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A56 text29 CODE >201:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A5C text29 CODE >202:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A5D text29 CODE >203:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A5E text29 CODE >205:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A5F text29 CODE >208:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A61 text29 CODE >210:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A63 text29 CODE >212:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A64 text29 CODE >214:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A66 text29 CODE >217:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A68 text29 CODE >218:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A69 text29 CODE >221:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A6A text29 CODE >222:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+A6B text29 CODE >224:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/i2c2.c
+7F6 text28 CODE >63:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+7F6 text28 CODE >66:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+7F9 text28 CODE >68:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+7FA text28 CODE >70:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+7FB text28 CODE >72:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+7FD text28 CODE >74:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+7FE text28 CODE >76:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+7FF text28 CODE >77:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+795 text27 CODE >55:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+795 text27 CODE >60:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+797 text27 CODE >61:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+798 text27 CODE >62:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+799 text27 CODE >63:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+79A text27 CODE >64:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+79B text27 CODE >65:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+79C text27 CODE >70:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+79E text27 CODE >71:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7A0 text27 CODE >72:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7A2 text27 CODE >73:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7A4 text27 CODE >74:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7A6 text27 CODE >75:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7A7 text27 CODE >80:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7A9 text27 CODE >81:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7AA text27 CODE >82:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7AC text27 CODE >83:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7AD text27 CODE >84:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7B0 text27 CODE >85:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7B3 text27 CODE >90:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7B4 text27 CODE >91:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7B6 text27 CODE >92:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7B8 text27 CODE >93:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7B9 text27 CODE >94:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7BA text27 CODE >95:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7BB text27 CODE >100:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7BC text27 CODE >101:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7BE text27 CODE >102:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7C0 text27 CODE >103:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7C1 text27 CODE >104:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7C2 text27 CODE >105:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7C3 text27 CODE >110:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7C5 text27 CODE >111:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7C7 text27 CODE >112:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7C9 text27 CODE >113:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7CB text27 CODE >114:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7CD text27 CODE >115:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7D0 text27 CODE >120:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7D3 text27 CODE >121:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7D5 text27 CODE >122:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7D7 text27 CODE >123:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7D9 text27 CODE >124:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7DB text27 CODE >125:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7DE text27 CODE >134:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7E0 text27 CODE >135:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7E3 text27 CODE >136:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7E5 text27 CODE >137:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7E8 text27 CODE >138:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7EA text27 CODE >139:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7EC text27 CODE >140:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7EE text27 CODE >141:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7F1 text27 CODE >142:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7F3 text27 CODE >143:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+7F5 text27 CODE >144:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/pin_manager.c
+8ED text26 CODE >79:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+8ED text26 CODE >82:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+8EF text26 CODE >84:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+8F0 text26 CODE >86:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+8F1 text26 CODE >88:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+8F2 text26 CODE >90:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+8F3 text26 CODE >92:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+8F4 text26 CODE >93:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+8F5 text25 CODE >65:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/spi1.c
+8F5 text25 CODE >70:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/spi1.c
+8F8 text25 CODE >73:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/spi1.c
+8FA text25 CODE >76:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/spi1.c
+8FC text25 CODE >77:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/spi1.c
+92A text24 CODE >142:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+92A text24 CODE >143:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+932 text24 CODE >144:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+98E text23 CODE >61:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+98E text23 CODE >66:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+991 text23 CODE >69:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+993 text23 CODE >72:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+994 text23 CODE >75:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+996 text23 CODE >78:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+997 text23 CODE >81:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+99F text23 CODE >84:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+9A2 text23 CODE >85:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr0.c
+9A3 text22 CODE >63:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr1.c
+9A3 text22 CODE >68:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr1.c
+9A5 text22 CODE >71:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr1.c
+9A6 text22 CODE >74:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr1.c
+9A8 text22 CODE >77:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr1.c
+9AA text22 CODE >80:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr1.c
+9AC text22 CODE >83:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr1.c
+9B3 text22 CODE >86:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr1.c
+9B5 text22 CODE >89:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr1.c
+9B8 text22 CODE >90:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr1.c
+A6C text21 CODE >50:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+A6C text21 CODE >52:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+A6F text21 CODE >53:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+A72 text21 CODE >54:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+A75 text21 CODE >55:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+A78 text21 CODE >56:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+A7B text21 CODE >57:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+A7E text21 CODE >58:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+A81 text21 CODE >59:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+A84 text21 CODE >60:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+A87 text21 CODE >61:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/mcc.c
+9B9 text20 CODE >67:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_config.c
+9B9 text20 CODE >68:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_config.c
+9BC text20 CODE >69:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_config.c
+9BD text20 CODE >70:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_config.c
+9BE text20 CODE >71:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_config.c
+9C1 text20 CODE >72:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_config.c
+9C4 text20 CODE >73:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_config.c
+9C7 text20 CODE >74:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_config.c
+9CF text20 CODE >75:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_config.c
+8BE text19 CODE >92:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr1.c
+8BE text19 CODE >95:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr1.c
+8C0 text19 CODE >96:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr1.c
+8C1 text18 CODE >98:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr1.c
+8C1 text18 CODE >101:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr1.c
+8C3 text18 CODE >102:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/tmr1.c
+49D text17 CODE >7:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+49D text17 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+49F text17 CODE >16:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+4A9 text17 CODE >17:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+4C8 text17 CODE >18:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+4CB text17 CODE >20:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+4D6 text17 CODE >21:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+4F5 text17 CODE >22:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+4FA text17 CODE >24:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+505 text17 CODE >25:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+511 text17 CODE >26:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+513 text17 CODE >27:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+514 text17 CODE >28:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+51C text17 CODE >29:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+520 text17 CODE >27:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+524 text17 CODE >32:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+52C text17 CODE >33:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+54E text17 CODE >34:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+55E text17 CODE >35:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+55F text17 CODE >37:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+567 text17 CODE >38:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+56D text17 CODE >40:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+572 text17 CODE >41:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+590 text17 CODE >42:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+5A1 text17 CODE >43:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+F13 text16 CODE >7:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+F13 text16 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+F15 text16 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+F1F text16 CODE >16:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+F3E text16 CODE >17:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+F41 text16 CODE >19:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+F4C text16 CODE >20:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+F6B text16 CODE >21:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+F78 text16 CODE >22:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+F7A text16 CODE >23:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+F7B text16 CODE >24:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+F83 text16 CODE >25:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+F87 text16 CODE >23:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+F8B text16 CODE >28:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+FAD text16 CODE >29:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+FBD text16 CODE >30:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+FC5 text16 CODE >31:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+FCB text16 CODE >33:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+FD0 text16 CODE >34:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+FEE text16 CODE >35:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+FFF text16 CODE >36:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+A88 text15 CODE >1:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\abs.c
+A88 text15 CODE >3:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\abs.c
+AA3 text15 CODE >4:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\abs.c
+BB0 text14 CODE >173:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+BB2 text14 CODE >175:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+BB8 text14 CODE >179:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+BBD text14 CODE >181:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+BC1 text14 CODE >182:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+BC2 text14 CODE >183:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+BC2 text14 CODE >185:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+BC3 text14 CODE >186:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+BD4 text14 CODE >187:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+BDA text14 CODE >189:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+BDB text14 CODE >191:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+BDD text14 CODE >193:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+BDF text14 CODE >194:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\mcc_generated_files/eusart1.c
+957 text13 CODE >258:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+957 text13 CODE >259:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+959 text13 CODE >260:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+95D text13 CODE >261:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+961 text13 CODE >262:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+963 text13 CODE >263:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+965 text13 CODE >264:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+B57 text12 CODE >242:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+B59 text12 CODE >244:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+B65 text12 CODE >245:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+B69 text12 CODE >246:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+B6D text12 CODE >247:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+B6E text12 CODE >248:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+B72 text12 CODE >249:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+B80 text12 CODE >250:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+B82 text12 CODE >252:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+DC5 text11 CODE >5:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+DC5 text11 CODE >13:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+DC7 text11 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+DCB text11 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+DD0 text11 CODE >16:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+DD2 text11 CODE >18:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+DD6 text11 CODE >19:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+DDB text11 CODE >20:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+DDF text11 CODE >22:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+DE1 text11 CODE >23:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+DE7 text11 CODE >24:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+DE9 text11 CODE >25:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+DEA text11 CODE >26:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+DEF text11 CODE >27:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+DF3 text11 CODE >25:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+DF7 text11 CODE >30:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+DFC text11 CODE >31:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+E06 text11 CODE >32:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+E0A text11 CODE >33:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+E0B text11 CODE >35:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+E10 text11 CODE >36:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+E16 text11 CODE >38:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+E1B text11 CODE >39:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+E20 text11 CODE >40:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+E24 text11 CODE >41:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
+363 text10 CODE >130:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+365 text10 CODE >134:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+36B text10 CODE >135:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+377 text10 CODE >136:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+378 text10 CODE >137:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+379 text10 CODE >139:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+37E text10 CODE >140:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+381 text10 CODE >143:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+387 text10 CODE >144:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+38C text10 CODE >147:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+392 text10 CODE >148:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+397 text10 CODE >151:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+39C text10 CODE >152:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+39F text10 CODE >154:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+3B6 text10 CODE >155:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+3BF text10 CODE >165:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+3BF text10 CODE >166:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+3C2 text10 CODE >167:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+3C3 text10 CODE >170:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+3C4 text10 CODE >171:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+3C8 text10 CODE >172:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+3CC text10 CODE >173:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+3CE text10 CODE >174:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+3D6 text10 CODE >175:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+3D7 text10 CODE >179:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+3DF text10 CODE >180:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+3E3 text10 CODE >181:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+3EB text10 CODE >182:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+3EC text10 CODE >183:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+3ED text10 CODE >186:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+3F5 text10 CODE >187:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+3F7 text10 CODE >188:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+3FB text10 CODE >189:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+3FF text10 CODE >190:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+401 text10 CODE >191:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+409 text10 CODE >192:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+40A text10 CODE >197:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+414 text10 CODE >198:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+415 text10 CODE >199:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+416 text10 CODE >200:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+41E text10 CODE >201:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+41F text10 CODE >204:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+43A text10 CODE >205:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+440 text10 CODE >206:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+441 text10 CODE >207:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+445 text10 CODE >208:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+44B text10 CODE >209:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+44C text10 CODE >211:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+454 text10 CODE >212:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+455 text10 CODE >215:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+458 text10 CODE >216:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+459 text10 CODE >220:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+45A text10 CODE >221:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+45E text10 CODE >222:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+463 text10 CODE >223:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+465 text10 CODE >224:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+469 text10 CODE >225:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+46F text10 CODE >226:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+470 text10 CODE >227:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+474 text10 CODE >228:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+47A text10 CODE >229:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+47C text10 CODE >231:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+49C text10 CODE >234:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_oled.c
+9E7 text9 CODE >104:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_config.c
+9E9 text9 CODE >105:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_config.c
+9EF text9 CODE >106:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_config.c
+9F4 text9 CODE >107:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_config.c
+9FA text9 CODE >108:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_config.c
+9FF text9 CODE >109:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\src/pba_config.c
+C8A text8 CODE >8:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputc.c
+C8A text8 CODE >12:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputc.c
+C95 text8 CODE >13:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputc.c
+C99 text8 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputc.c
+C9A text8 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputc.c
+CC1 text8 CODE >20:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputc.c
+CCA text8 CODE >24:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputc.c
+B2E text7 CODE >8:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputs.c
+B30 text7 CODE >13:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputs.c
+B32 text7 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputs.c
+B33 text7 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputs.c
+B41 text7 CODE >16:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputs.c
+B46 text7 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputs.c
+B56 text7 CODE >19:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputs.c
+A35 text6 CODE >5:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\strlen.c
+A37 text6 CODE >7:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\strlen.c
+A3B text6 CODE >8:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\strlen.c
+A3C text6 CODE >9:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\strlen.c
+A40 text6 CODE >8:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\strlen.c
+A49 text6 CODE >11:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\strlen.c
+A4F text6 CODE >12:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\strlen.c
+D11 text5 CODE >72:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+D13 text5 CODE >77:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+D18 text5 CODE >78:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+D21 text5 CODE >82:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+D2D text5 CODE >83:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+D2F text5 CODE >84:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+D30 text5 CODE >85:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+D3C text5 CODE >86:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+D41 text5 CODE >84:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+D4F text5 CODE >90:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+D54 text5 CODE >91:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+D5D text5 CODE >94:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+D69 text5 CODE >95:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+1F3 text4 CODE >287:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+1F5 text4 CODE >293:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+205 text4 CODE >294:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+218 text4 CODE >295:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+21E text4 CODE >296:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+23C text4 CODE >297:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+23C text4 CODE >300:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+241 text4 CODE >301:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+245 text4 CODE >302:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+245 text4 CODE >303:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+262 text4 CODE >304:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+26A text4 CODE >305:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+275 text4 CODE >306:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+27A text4 CODE >307:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+27A text4 CODE >310:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+27F text4 CODE >311:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+281 text4 CODE >312:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+282 text4 CODE >313:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+287 text4 CODE >314:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+2B6 text4 CODE >315:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+2BA text4 CODE >316:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+2BE text4 CODE >317:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+2EB text4 CODE >312:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+2EB text4 CODE >318:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+326 text4 CODE >321:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+332 text4 CODE >322:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+337 text4 CODE >323:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+34F text4 CODE >327:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+362 text4 CODE >328:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+6A2 text3 CODE >692:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+6A4 text3 CODE >702:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+6B6 text3 CODE >703:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+6BE text3 CODE >705:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+6C3 text3 CODE >706:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+6C7 text3 CODE >847:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+6EA text3 CODE >849:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+6F2 text3 CODE >850:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+70E text3 CODE >852:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+738 text3 CODE >1372:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+749 text3 CODE >1373:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+751 text3 CODE >1374:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+75E text3 CODE >1375:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+764 text3 CODE >1379:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+76C text3 CODE >1380:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+76F text3 CODE >1384:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+78A text3 CODE >1385:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+794 text3 CODE >1387:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+BE0 text2 CODE >1390:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+BE2 text2 CODE >1395:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+BEA text2 CODE >1396:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+BEC text2 CODE >1397:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+BED text2 CODE >1398:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+C05 text2 CODE >1397:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+C0E text2 CODE >1400:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+C15 text2 CODE >1404:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+9D0 text1 CODE >5:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\printf.c
+9D0 text1 CODE >9:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\printf.c
+9D5 text1 CODE >10:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\printf.c
+9E6 text1 CODE >13:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\printf.c
+E25 maintext CODE >49:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+E25 maintext CODE >51:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+E28 maintext CODE >56:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+E2A maintext CODE >57:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+E2B maintext CODE >59:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+E2D maintext CODE >60:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+E31 maintext CODE >61:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+E33 maintext CODE >63:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+E37 maintext CODE >64:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+E3A maintext CODE >65:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+E3F maintext CODE >66:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+E42 maintext CODE >68:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+E4A maintext CODE >69:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+E56 maintext CODE >71:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+E68 maintext CODE >73:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+E6B maintext CODE >74:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+E77 maintext CODE >75:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+E7F maintext CODE >76:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+E80 maintext CODE >79:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+E83 maintext CODE >80:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+E8B maintext CODE >82:O:\Elektronik\Basislehrjahr\IPA\Armin\sensor-board\MPLAB Files\Sensor Board\main.c
+8D2 clrtext CODE >11839:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+8D2 clrtext CODE >11840:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+8D3 clrtext CODE >11841:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+8D3 clrtext CODE >11842:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+8D4 clrtext CODE >11843:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+8D5 clrtext CODE >11844:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+8D6 clrtext CODE >11845:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+8D7 clrtext CODE >11846:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+8D8 inittext CODE >11813:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+8D8 inittext CODE >11814:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+8D9 inittext CODE >11815:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+8D9 inittext CODE >11816:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+8DA inittext CODE >11817:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+8DB inittext CODE >11818:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+8DC inittext CODE >11819:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+8DD inittext CODE >11820:C:\Users\bweina\AppData\Local\Temp\sabcx.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+___awdiv@counter 25 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__size_of_TMR1_StopTimer 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__LdataBANK1 0 0 ABS 0 dataBANK1 -
+__Hspace_0 101E 0 ABS 0 - -
+__Hspace_1 1C4 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 10013 0 ABS 0 - -
+__HidataBANK1 0 0 ABS 0 idataBANK1 -
+SYSTICK_Handler@i 79 0 COMMON 1 cstackCOMMON dist/default/production\Sensor_Board.production.o
+_SSP1STATbits 18F 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+EUSART1_SetErrorHandler@interruptHandler 20 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+_EUSART1_Initialize 1996 0 CODE 0 text30 dist/default/production\Sensor_Board.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+I2C2_MasterWrite@trBlock 166 0 BANK2 1 bssBANK2 dist/default/production\Sensor_Board.production.o
+_T1CONbits 20E 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_I2C2_BusCollisionISR 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_PMD_Initialize 11DA 0 CODE 0 text26 dist/default/production\Sensor_Board.production.o
+?_abs 33 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+?_pad 3F 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__end_of_EUSART1_DefaultErrorHandler 1190 0 CODE 0 text59 dist/default/production\Sensor_Board.production.o
+main@a E0 0 BANK1 1 cstackBANK1 dist/default/production\Sensor_Board.production.o
+__Hstrings 0 0 ABS 0 strings -
+?_vfprintf 6D 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+_SYSTICK_Handler 1D34 0 CODE 0 text48 dist/default/production\Sensor_Board.production.o
+_LATA 18 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_LATB 19 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_LATC 1A 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_LATD 1B 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_LATE 1C 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_LATF 1D 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_PMD0 796 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_PMD1 797 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_PMD2 798 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_PMD3 799 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_PMD4 79A 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_PMD5 79B 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_Send 1548 0 CODE 0 text43 dist/default/production\Sensor_Board.production.o
+_WPUA 1F39 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_WPUB 1F44 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_WPUC 1F4F 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_WPUD 1F5A 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_WPUE 1F65 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_WPUF 1E51 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+___sp 0 0 STACK 2 stack C:\Users\bweina\AppData\Local\Temp\sabcxg.o
+_addX 7B 0 COMMON 1 bssCOMMON dist/default/production\Sensor_Board.production.o
+_addY 7A 0 COMMON 1 bssCOMMON dist/default/production\Sensor_Board.production.o
+_dbuf 1A0 0 BANK3 1 bssBANK3 dist/default/production\Sensor_Board.production.o
+_dtoa 3E6 0 CODE 0 text4 dist/default/production\Sensor_Board.production.o
+_main 1C4A 0 CODE 0 maintext dist/default/production\Sensor_Board.production.o
+_nout A5 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+_prec A9 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+abs@a 33 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+btemp 7E 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+pad@i 43 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+pad@p 40 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+pad@w 45 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+start 9E 0 CODE 0 init C:\Users\bweina\AppData\Local\Temp\sabcxg.o
+___aomod@counter 31 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+_TMR0_InterruptHandler ED 0 BANK1 1 nvBANK1 dist/default/production\Sensor_Board.production.o
+__size_of___aodiv 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of___aomod 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_Send 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_dtoa 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+I2C2_ISR@pi2c_buf_ptr BA 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__end_of_SPI1_Initialize 11FA 0 CODE 0 text25 dist/default/production\Sensor_Board.production.o
+__end_of_TMR0_SetInterruptHandler 1266 0 CODE 0 text24 dist/default/production\Sensor_Board.production.o
+pad@fp 47 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__size_of_EUSART1_Receive_ISR 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_I2C2_ISR 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__end_of_I2C2_Initialize 14D8 0 CODE 0 text29 dist/default/production\Sensor_Board.production.o
+__end_of_EUSART1_SetTxInterruptHandler 1254 0 CODE 0 text31 dist/default/production\Sensor_Board.production.o
+__end_of_I2C2_BusCollisionISR 117C 0 CODE 0 text54 dist/default/production\Sensor_Board.production.o
+__LidataBANK1 0 0 ABS 0 idataBANK1 -
+__Hpowerup 0 0 CODE 0 powerup -
+_I2C2_MasterWriteTRBBuild 15CE 0 CODE 0 text39 dist/default/production\Sensor_Board.production.o
+putch@ch 2E 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__size_of_TMR1_Initialize 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_TMR1_StartTimer 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__end_of_vfpfcnvrt F2A 0 CODE 0 text3 dist/default/production\Sensor_Board.production.o
+__end_of_I2C2_FunctionComplete 12F2 0 CODE 0 text53 dist/default/production\Sensor_Board.production.o
+_i2c2_state BE 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_vfpfcnvrt 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+TMR0_SetInterruptHandler@InterruptHandler 20 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__end_of_OLED_Init 189C 0 CODE 0 text42 dist/default/production\Sensor_Board.production.o
+__end_of_OLED_Putc 93A 0 CODE 0 text10 dist/default/production\Sensor_Board.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\bweina\AppData\Local\Temp\sabcxg.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\bweina\AppData\Local\Temp\sabcxg.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\bweina\AppData\Local\Temp\sabcxg.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\bweina\AppData\Local\Temp\sabcxg.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\bweina\AppData\Local\Temp\sabcxg.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\bweina\AppData\Local\Temp\sabcxg.o
+__size_of_EUSART1_SetErrorHandler 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+___bmul@multiplicand 70 0 COMMON 1 cstackCOMMON dist/default/production\Sensor_Board.production.o
+__size_of_ADC_Initialize 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_OLED_Init 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_OLED_Putc 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__end_of_I2C2_MasterWrite 1760 0 CODE 0 text38 dist/default/production\Sensor_Board.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+_RC1STAbits 11D 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__end_of_PMD_Initialize 11EA 0 CODE 0 text26 dist/default/production\Sensor_Board.production.o
+EUSART1_Write@txData 21 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__size_of_EUSART1_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_EUSART1_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_I2C2_MasterWrite 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_I2C2_FunctionComplete 12CC 0 CODE 0 text53 dist/default/production\Sensor_Board.production.o
+___awdiv@sign 26 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_vfpfcnvrt D44 0 CODE 0 text3 dist/default/production\Sensor_Board.production.o
+dtoa@fp 57 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+I2C2_MasterRead@trBlock 162 0 BANK2 1 bssBANK2 dist/default/production\Sensor_Board.production.o
+__size_of_EUSART1_RxDataHandler 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_EUSART1_Receive_ISR 189C 0 CODE 0 text56 dist/default/production\Sensor_Board.production.o
+_OLED_Init 182C 0 CODE 0 text42 dist/default/production\Sensor_Board.production.o
+_OLED_Putc 6C6 0 CODE 0 text10 dist/default/production\Sensor_Board.production.o
+_SPI1_Initialize 11EA 0 CODE 0 text25 dist/default/production\Sensor_Board.production.o
+_ADCON0 9D 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_ADCON1 9E 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_ADRESH 9C 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_ADRESL 9B 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_ANSELA 1F38 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_ANSELB 1F43 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_ANSELC 1F4E 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_ANSELD 1F59 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_ANSELE 1F64 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_ANSELF 1E50 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_TMR0_DefaultInterruptHandler 6 0 CODE 0 text49 dist/default/production\Sensor_Board.production.o
+_I2C2_Initialize 14A0 0 CODE 0 text29 dist/default/production\Sensor_Board.production.o
+___awdiv@dividend 22 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+_I2C2_ISR FA 0 CODE 0 text51 dist/default/production\Sensor_Board.production.o
+I2C2_MasterWrite@address 28 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+I2C2_MasterWrite@pdata 2D 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+I2C2_MasterWrite@pflag 2A 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__end_of_INTERRUPT_InterruptManager 9E 0 CODE 0 intentry dist/default/production\Sensor_Board.production.o
+__end_of___bmul 131C 0 CODE 0 text50 dist/default/production\Sensor_Board.production.o
+__end_of_EUSART1_SetRxInterruptHandler 1242 0 CODE 0 text32 dist/default/production\Sensor_Board.production.o
+_softTimer 120 0 BANK2 1 bssBANK2 dist/default/production\Sensor_Board.production.o
+__end_of_I2C2_ISR 3E6 0 CODE 0 text51 dist/default/production\Sensor_Board.production.o
+__end_of_BitReverseTable256 D44 0 STRCODE 0 stringtext1 dist/default/production\Sensor_Board.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+?_printf D6 0 BANK1 1 cstackBANK1 dist/default/production\Sensor_Board.production.o
+__size_of_SYSTICK_Handler 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+EUSART1_SetTxInterruptHandler@interruptHandler 20 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+OLED_Putc@arrowCnt B5 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+__LnvBANK1 0 0 ABS 0 nvBANK1 -
+__LnvBANK2 0 0 ABS 0 nvBANK2 -
+__LnvBANK3 0 0 ABS 0 nvBANK3 -
+__size_of_SPI1_Exchange8bit 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+___bmul@multiplier 73 0 COMMON 1 cstackCOMMON dist/default/production\Sensor_Board.production.o
+___awdiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+_OLED_Clear 12AE 0 CODE 0 text13 dist/default/production\Sensor_Board.production.o
+__end_of___aodiv B44 0 CODE 0 text17 dist/default/production\Sensor_Board.production.o
+__end_of___aomod 2000 0 CODE 0 text16 dist/default/production\Sensor_Board.production.o
+__end_of___awdiv 1C4A 0 CODE 0 text11 dist/default/production\Sensor_Board.production.o
+EUSART1_SetFramingErrorHandler@interruptHandler 20 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+_OLED_GotoXY 16AE 0 CODE 0 text12 dist/default/production\Sensor_Board.production.o
+___aodiv@quotient 33 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+RTC_IsTempConvDone@F8258 E2 0 BANK1 1 dataBANK1 dist/default/production\Sensor_Board.production.o
+_INLVLA 1F3C 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_INLVLB 1F47 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_INLVLC 1F52 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_INLVLD 1F5D 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_INLVLE 1F68 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_INLVLF 1E54 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+?_strlen 20 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+___stackhi 23EF 0 ABS 0 - C:\Users\bweina\AppData\Local\Temp\sabcxg.o
+___stacklo 2114 0 ABS 0 - C:\Users\bweina\AppData\Local\Temp\sabcxg.o
+___aomod@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__size_of_fputc 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_fputs 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_putch 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_PIN_MANAGER_Initialize F2A 0 CODE 0 text27 dist/default/production\Sensor_Board.production.o
+___aomod@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+I2C2_MasterWriteTRBBuild@ptrb 26 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+_SSP2CON1bits 19A 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+start_initialization A2 0 CODE 0 cinit dist/default/production\Sensor_Board.production.o
+_SSP2CON2bits 19B 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_eusart1RxLastError BF 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+_ODCONA 1F3A 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_ODCONB 1F45 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_ODCONC 1F50 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_ODCOND 1F5B 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_ODCONE 1F66 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_ODCONF 1E52 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_BitReverseTable256 B44 0 STRCODE 0 stringtext1 dist/default/production\Sensor_Board.production.o
+_OSCFRQ 893 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_p_i2c2_trb_current BC 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+__size_of_I2C2_MasterWriteTRBBuild 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_PBA_Init 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+I2C2_MasterWriteTRBBuild@pdata 20 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+_RB0PPS 1F18 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_RB2PPS 1F1A 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_RB3PPS 1F1B 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_RB4PPS 1F1C 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_RC1REG 119 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_RC1STA 11D 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_RF6PPS 1E3E 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_EUSART1_SetTxInterruptHandler 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__end_of_SYSTEM_Initialize 1510 0 CODE 0 text21 dist/default/production\Sensor_Board.production.o
+clear_ram0 11A4 0 CODE 0 clrtext dist/default/production\Sensor_Board.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__pcstackBANK1 C8 0 BANK1 1 cstackBANK1 dist/default/production\Sensor_Board.production.o
+_T0CON0 59E 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_T0CON1 59F 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_T1GATE 210 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_T1GCON 20F 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+I2C2_MasterTRBInsert@count 23 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__end_of_I2C2_WaitForLastPacketToComplete 11CA 0 CODE 0 text41 dist/default/production\Sensor_Board.production.o
+I2C2_MasterTRBInsert@ptrb_list 20 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+I2C2_MasterTRBInsert@pflag 21 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+_TX1REG 11A 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_TX1STA 11E 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_SPI1_Initialize 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__end_of_printf 13CE 0 CODE 0 text1 dist/default/production\Sensor_Board.production.o
+_EUSART1_DefaultFramingErrorHandler 4 0 CODE 0 text58 dist/default/production\Sensor_Board.production.o
+__size_of_I2C2_WaitForLastPacketToComplete 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_EUSART1_DefaultOverrunErrorHandler 1190 0 CODE 0 text57 dist/default/production\Sensor_Board.production.o
+__end_of_OLED_Clear 12CC 0 CODE 0 text13 dist/default/production\Sensor_Board.production.o
+__end_of_EUSART1_Receive_ISR 1914 0 CODE 0 text56 dist/default/production\Sensor_Board.production.o
+I2C2_MasterWriteTRBBuild@length 21 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__size_of_I2C2_Initialize 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_EUSART1_Initialize 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+fputc@fp 31 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+fputs@fp 37 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\bweina\AppData\Local\Temp\sabcxg.o
+_EUSART1_Write 1760 0 CODE 0 text14 dist/default/production\Sensor_Board.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Hcinit FA 0 CODE 0 cinit -
+__end_of_strlen 14A0 0 CODE 0 text6 dist/default/production\Sensor_Board.production.o
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hsfr32 0 0 ABS 0 sfr32 -
+__Hsfr33 0 0 ABS 0 sfr33 -
+__Hsfr34 0 0 ABS 0 sfr34 -
+__Hsfr35 0 0 ABS 0 sfr35 -
+__Hsfr36 0 0 ABS 0 sfr36 -
+__Hsfr37 0 0 ABS 0 sfr37 -
+__Hsfr38 0 0 ABS 0 sfr38 -
+__Hsfr39 0 0 ABS 0 sfr39 -
+__Hsfr40 0 0 ABS 0 sfr40 -
+__Hsfr41 0 0 ABS 0 sfr41 -
+__Hsfr42 0 0 ABS 0 sfr42 -
+__Hsfr43 0 0 ABS 0 sfr43 -
+__Hsfr44 0 0 ABS 0 sfr44 -
+__Hsfr45 0 0 ABS 0 sfr45 -
+__Hsfr46 0 0 ABS 0 sfr46 -
+__Hsfr47 0 0 ABS 0 sfr47 -
+__Hsfr48 0 0 ABS 0 sfr48 -
+__Hsfr49 0 0 ABS 0 sfr49 -
+__Hsfr50 0 0 ABS 0 sfr50 -
+__Hsfr51 0 0 ABS 0 sfr51 -
+__Hsfr52 0 0 ABS 0 sfr52 -
+__Hsfr53 0 0 ABS 0 sfr53 -
+__Hsfr54 0 0 ABS 0 sfr54 -
+__Hsfr55 0 0 ABS 0 sfr55 -
+__Hsfr56 0 0 ABS 0 sfr56 -
+__Hsfr57 0 0 ABS 0 sfr57 -
+__Hsfr58 0 0 ABS 0 sfr58 -
+__Hsfr59 0 0 ABS 0 sfr59 -
+__Hsfr60 0 0 ABS 0 sfr60 -
+__Hsfr61 0 0 ABS 0 sfr61 -
+__Hsfr62 0 0 ABS 0 sfr62 -
+__Hsfr63 0 0 ABS 0 sfr63 -
+__Hstack 0 0 STACK 2 stack -
+RTC_Init@i2cWflag 32 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__size_of_EUSART1_Transmit_ISR 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbank32 0 0 BANK32 1 bank32 -
+__Hbank33 0 0 BANK33 1 bank33 -
+__Hbank34 0 0 BANK34 1 bank34 -
+__Hbank35 0 0 BANK35 1 bank35 -
+__Hbank36 0 0 BANK36 1 bank36 -
+__Hbank37 0 0 BANK37 1 bank37 -
+__Hbank38 0 0 BANK38 1 bank38 -
+__Hbank39 0 0 BANK39 1 bank39 -
+__Hbank40 0 0 BANK40 1 bank40 -
+__Hbank41 0 0 BANK41 1 bank41 -
+__Hbank42 0 0 BANK42 1 bank42 -
+__Hbank43 0 0 BANK43 1 bank43 -
+__Hbank44 0 0 BANK44 1 bank44 -
+__Hbank45 0 0 BANK45 1 bank45 -
+__Hbank46 0 0 BANK46 1 bank46 -
+__Hbank47 0 0 BANK47 1 bank47 -
+__Hbank48 0 0 BANK48 1 bank48 -
+__Hbank49 0 0 BANK49 1 bank49 -
+__Hbank50 0 0 BANK50 1 bank50 -
+__Hbank51 0 0 BANK51 1 bank51 -
+__Hbank52 0 0 BANK52 1 bank52 -
+__Hbank53 0 0 BANK53 1 bank53 -
+__Hbank54 0 0 BANK54 1 bank54 -
+__Hbank55 0 0 BANK55 1 bank55 -
+__Hbank56 0 0 BANK56 1 bank56 -
+__Hbank57 0 0 BANK57 1 bank57 -
+__Hbank58 0 0 BANK58 1 bank58 -
+__Hbank59 0 0 BANK59 1 bank59 -
+__Hbank60 0 0 BANK60 1 bank60 -
+__Hbank61 0 0 BANK61 1 bank61 -
+__Hbank62 0 0 BANK62 1 bank62 -
+__Hbank63 0 0 BANK63 1 bank63 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+_BAUD1CON 11F 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10018 0 CONFIG 4 config -
+I2C2_MasterWriteTRBBuild@address 22 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__Lcinit A2 0 CODE 0 cinit -
+_T1GCONbits 20F 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_eusart1TxBufferRemaining EF 0 BANK1 1 nvBANK1 dist/default/production\Sensor_Board.production.o
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lsfr32 0 0 ABS 0 sfr32 -
+__Lsfr33 0 0 ABS 0 sfr33 -
+__Lsfr34 0 0 ABS 0 sfr34 -
+__Lsfr35 0 0 ABS 0 sfr35 -
+__Lsfr36 0 0 ABS 0 sfr36 -
+__Lsfr37 0 0 ABS 0 sfr37 -
+__Lsfr38 0 0 ABS 0 sfr38 -
+__Lsfr39 0 0 ABS 0 sfr39 -
+__Lsfr40 0 0 ABS 0 sfr40 -
+__Lsfr41 0 0 ABS 0 sfr41 -
+__Lsfr42 0 0 ABS 0 sfr42 -
+__Lsfr43 0 0 ABS 0 sfr43 -
+__Lsfr44 0 0 ABS 0 sfr44 -
+__Lsfr45 0 0 ABS 0 sfr45 -
+__Lsfr46 0 0 ABS 0 sfr46 -
+__Lsfr47 0 0 ABS 0 sfr47 -
+__Lsfr48 0 0 ABS 0 sfr48 -
+__Lsfr49 0 0 ABS 0 sfr49 -
+__Lsfr50 0 0 ABS 0 sfr50 -
+__Lsfr51 0 0 ABS 0 sfr51 -
+__Lsfr52 0 0 ABS 0 sfr52 -
+__Lsfr53 0 0 ABS 0 sfr53 -
+__Lsfr54 0 0 ABS 0 sfr54 -
+__Lsfr55 0 0 ABS 0 sfr55 -
+__Lsfr56 0 0 ABS 0 sfr56 -
+__Lsfr57 0 0 ABS 0 sfr57 -
+__Lsfr58 0 0 ABS 0 sfr58 -
+__Lsfr59 0 0 ABS 0 sfr59 -
+__Lsfr60 0 0 ABS 0 sfr60 -
+__Lsfr61 0 0 ABS 0 sfr61 -
+__Lsfr62 0 0 ABS 0 sfr62 -
+__Lsfr63 0 0 ABS 0 sfr63 -
+__Lstack 0 0 STACK 2 stack -
+_EUSART1_FramingErrorHandler 16A 0 BANK2 1 nvBANK2 dist/default/production\Sensor_Board.production.o
+_EUSART1_OverrunErrorHandler 1C2 0 BANK3 1 nvBANK3 dist/default/production\Sensor_Board.production.o
+init_ram 11B0 0 CODE 0 inittext dist/default/production\Sensor_Board.production.o
+_TMR1_StopTimer 1182 0 CODE 0 text18 dist/default/production\Sensor_Board.production.o
+__size_of_EUSART1_SetFramingErrorHandler 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_EUSART1_SetOverrunErrorHandler 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__Linittext 0 0 ABS 0 inittext -
+__end_of_EUSART1_Transmit_ISR 15CE 0 CODE 0 text55 dist/default/production\Sensor_Board.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 9E 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 9E 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+_PBA_Init 1372 0 CODE 0 text20 dist/default/production\Sensor_Board.production.o
+__pstringtext1 B44 0 STRCODE 0 stringtext1 dist/default/production\Sensor_Board.production.o
+__pstringtext2 2000 0 STRCODE 0 stringtext2 dist/default/production\Sensor_Board.production.o
+__pstringtext3 201C 0 STRCODE 0 stringtext3 dist/default/production\Sensor_Board.production.o
+__pstringtext4 2036 0 STRCODE 0 stringtext4 dist/default/production\Sensor_Board.production.o
+__pstringtext5 0 0 STRCODE 0 stringtext5 dist/default/production\Sensor_Board.production.o
+__pnvBANK1 EB 0 BANK1 1 nvBANK1 dist/default/production\Sensor_Board.production.o
+__pnvBANK2 16A 0 BANK2 1 nvBANK2 dist/default/production\Sensor_Board.production.o
+__pnvBANK3 1C0 0 BANK3 1 nvBANK3 dist/default/production\Sensor_Board.production.o
+___aodiv@counter 31 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+_SSP1CON1 190 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_SSP1STAT 18F 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_SSP2CON1 19A 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_SSP2CON3 19C 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_SSP2STAT 199 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+___bmul 12F2 0 CODE 0 text50 dist/default/production\Sensor_Board.production.o
+___aomod@sign 32 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__end_of_SPI1_Exchange8bit 12AE 0 CODE 0 text44 dist/default/production\Sensor_Board.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+int$flags 7E 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_EUSART1_RxDefaultInterruptHandler 16C 0 BANK2 1 nvBANK2 dist/default/production\Sensor_Board.production.o
+_RA6 66 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_RA7 67 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__S0 101E 0 ABS 0 - -
+__S1 1C4 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+_abs 1510 0 CODE 0 text15 dist/default/production\Sensor_Board.production.o
+_pad 1A22 0 CODE 0 text5 dist/default/production\Sensor_Board.production.o
+__size_of_TMR0_ISR 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_TMR0_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_EUSART1_SetRxInterruptHandler 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_EUSART1_DefaultErrorHandler 1188 0 CODE 0 text59 dist/default/production\Sensor_Board.production.o
+__end_of_PBA_Init 13A0 0 CODE 0 text20 dist/default/production\Sensor_Board.production.o
+_previousState E8 0 BANK1 1 dataBANK1 dist/default/production\Sensor_Board.production.o
+__size_of_I2C2_MasterTRBInsert 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__end_of_TMR0_DefaultInterruptHandler 8 0 CODE 0 text49 dist/default/production\Sensor_Board.production.o
+_I2C2_BusCollisionISR 1176 0 CODE 0 text54 dist/default/production\Sensor_Board.production.o
+_TMR0_CallBack 1278 0 CODE 0 text47 dist/default/production\Sensor_Board.production.o
+__end_of_I2C2_MasterWriteTRBBuild 1614 0 CODE 0 text39 dist/default/production\Sensor_Board.production.o
+___aodiv@sign 32 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+_SYSTEM_Initialize 14D8 0 CODE 0 text21 dist/default/production\Sensor_Board.production.o
+_dtoa$2042 53 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__end_of_abs 1548 0 CODE 0 text15 dist/default/production\Sensor_Board.production.o
+__end_of_pad 1AD4 0 CODE 0 text5 dist/default/production\Sensor_Board.production.o
+_p_i2c2_current BB 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+__HnvBANK1 0 0 ABS 0 nvBANK1 -
+__HnvBANK2 0 0 ABS 0 nvBANK2 -
+__HnvBANK3 0 0 ABS 0 nvBANK3 -
+__Lintentry 8 0 CODE 0 intentry -
+__end_of_I2C2_MasterTRBInsert 1B8A 0 CODE 0 text40 dist/default/production\Sensor_Board.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\bweina\AppData\Local\Temp\sabcxg.o
+strlen@a 23 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+strlen@s 24 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+BTN_GetPosEdge@flags EA 0 BANK1 1 dataBANK1 dist/default/production\Sensor_Board.production.o
+__end_of_TMR1_StopTimer 1188 0 CODE 0 text18 dist/default/production\Sensor_Board.production.o
+__pdataBANK1 E2 0 BANK1 1 dataBANK1 dist/default/production\Sensor_Board.production.o
+__size_of___bmul 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__LbssBANK2 0 0 ABS 0 bssBANK2 -
+__LbssBANK3 0 0 ABS 0 bssBANK3 -
+__size_of_I2C2_FunctionComplete 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__Lstringtext1 0 0 ABS 0 stringtext1 -
+__Lstringtext2 0 0 ABS 0 stringtext2 -
+__Lstringtext3 0 0 ABS 0 stringtext3 -
+__Lstringtext4 0 0 ABS 0 stringtext4 -
+__Lstringtext5 0 0 ABS 0 stringtext5 -
+vfpfcnvrt@fmt 66 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+_INTERRUPT_InterruptManager 8 0 CODE 0 intentry dist/default/production\Sensor_Board.production.o
+_ADC_Initialize 11CA 0 CODE 0 text36 dist/default/production\Sensor_Board.production.o
+__size_of_PMD_Initialize 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_PIE0bits 716 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_PIE3bits 719 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_EUSART1_Write 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_eusart1RxHead 7D 0 COMMON 1 bssCOMMON dist/default/production\Sensor_Board.production.o
+_eusart1RxTail 7C 0 COMMON 1 bssCOMMON dist/default/production\Sensor_Board.production.o
+pad@buf 3F 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+_TMR0_ISR 1198 0 CODE 0 text46 dist/default/production\Sensor_Board.production.o
+__ptext10 6C6 0 CODE 0 text10 dist/default/production\Sensor_Board.production.o
+__ptext11 1B8A 0 CODE 0 text11 dist/default/production\Sensor_Board.production.o
+__ptext12 16AE 0 CODE 0 text12 dist/default/production\Sensor_Board.production.o
+__ptext13 12AE 0 CODE 0 text13 dist/default/production\Sensor_Board.production.o
+__ptext14 1760 0 CODE 0 text14 dist/default/production\Sensor_Board.production.o
+__ptext15 1510 0 CODE 0 text15 dist/default/production\Sensor_Board.production.o
+__ptext16 1E26 0 CODE 0 text16 dist/default/production\Sensor_Board.production.o
+__ptext17 93A 0 CODE 0 text17 dist/default/production\Sensor_Board.production.o
+__ptext18 1182 0 CODE 0 text18 dist/default/production\Sensor_Board.production.o
+__ptext19 117C 0 CODE 0 text19 dist/default/production\Sensor_Board.production.o
+__ptext20 1372 0 CODE 0 text20 dist/default/production\Sensor_Board.production.o
+__ptext21 14D8 0 CODE 0 text21 dist/default/production\Sensor_Board.production.o
+__ptext22 1346 0 CODE 0 text22 dist/default/production\Sensor_Board.production.o
+__ptext23 131C 0 CODE 0 text23 dist/default/production\Sensor_Board.production.o
+__ptext24 1254 0 CODE 0 text24 dist/default/production\Sensor_Board.production.o
+__ptext25 11EA 0 CODE 0 text25 dist/default/production\Sensor_Board.production.o
+__ptext26 11DA 0 CODE 0 text26 dist/default/production\Sensor_Board.production.o
+__ptext27 F2A 0 CODE 0 text27 dist/default/production\Sensor_Board.production.o
+__ptext28 FEC 0 CODE 0 text28 dist/default/production\Sensor_Board.production.o
+__ptext29 14A0 0 CODE 0 text29 dist/default/production\Sensor_Board.production.o
+__ptext30 1996 0 CODE 0 text30 dist/default/production\Sensor_Board.production.o
+__ptext31 1242 0 CODE 0 text31 dist/default/production\Sensor_Board.production.o
+__ptext32 1230 0 CODE 0 text32 dist/default/production\Sensor_Board.production.o
+__ptext33 121E 0 CODE 0 text33 dist/default/production\Sensor_Board.production.o
+__ptext34 120C 0 CODE 0 text34 dist/default/production\Sensor_Board.production.o
+__ptext35 11FA 0 CODE 0 text35 dist/default/production\Sensor_Board.production.o
+__ptext36 11CA 0 CODE 0 text36 dist/default/production\Sensor_Board.production.o
+__ptext37 1614 0 CODE 0 text37 dist/default/production\Sensor_Board.production.o
+__ptext38 1706 0 CODE 0 text38 dist/default/production\Sensor_Board.production.o
+__ptext39 15CE 0 CODE 0 text39 dist/default/production\Sensor_Board.production.o
+__ptext40 1AD4 0 CODE 0 text40 dist/default/production\Sensor_Board.production.o
+__ptext41 11BC 0 CODE 0 text41 dist/default/production\Sensor_Board.production.o
+__ptext42 182C 0 CODE 0 text42 dist/default/production\Sensor_Board.production.o
+__ptext43 1548 0 CODE 0 text43 dist/default/production\Sensor_Board.production.o
+__ptext44 1292 0 CODE 0 text44 dist/default/production\Sensor_Board.production.o
+__ptext46 1198 0 CODE 0 text46 dist/default/production\Sensor_Board.production.o
+__ptext47 1278 0 CODE 0 text47 dist/default/production\Sensor_Board.production.o
+__ptext48 1D34 0 CODE 0 text48 dist/default/production\Sensor_Board.production.o
+__ptext49 6 0 CODE 0 text49 dist/default/production\Sensor_Board.production.o
+__ptext50 12F2 0 CODE 0 text50 dist/default/production\Sensor_Board.production.o
+__ptext51 FA 0 CODE 0 text51 dist/default/production\Sensor_Board.production.o
+__ptext52 1400 0 CODE 0 text52 dist/default/production\Sensor_Board.production.o
+__ptext53 12CC 0 CODE 0 text53 dist/default/production\Sensor_Board.production.o
+__ptext54 1176 0 CODE 0 text54 dist/default/production\Sensor_Board.production.o
+__ptext55 1588 0 CODE 0 text55 dist/default/production\Sensor_Board.production.o
+__ptext56 189C 0 CODE 0 text56 dist/default/production\Sensor_Board.production.o
+__ptext57 1190 0 CODE 0 text57 dist/default/production\Sensor_Board.production.o
+__ptext58 4 0 CODE 0 text58 dist/default/production\Sensor_Board.production.o
+__ptext59 1188 0 CODE 0 text59 dist/default/production\Sensor_Board.production.o
+__ptext60 1434 0 CODE 0 text60 dist/default/production\Sensor_Board.production.o
+__end_of_EUSART1_DefaultFramingErrorHandler 6 0 CODE 0 text58 dist/default/production\Sensor_Board.production.o
+__end_of_EUSART1_DefaultOverrunErrorHandler 1198 0 CODE 0 text57 dist/default/production\Sensor_Board.production.o
+__end_of_PIN_MANAGER_Initialize FEC 0 CODE 0 text27 dist/default/production\Sensor_Board.production.o
+___aodiv 93A 0 CODE 0 text17 dist/default/production\Sensor_Board.production.o
+___aomod 1E26 0 CODE 0 text16 dist/default/production\Sensor_Board.production.o
+___awdiv 1B8A 0 CODE 0 text11 dist/default/production\Sensor_Board.production.o
+__end_of_TMR0_Initialize 1346 0 CODE 0 text23 dist/default/production\Sensor_Board.production.o
+_EUSART1_ErrorHandler 1C0 0 BANK3 1 nvBANK3 dist/default/production\Sensor_Board.production.o
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__Lbank32 0 0 BANK32 1 bank32 -
+__Lbank33 0 0 BANK33 1 bank33 -
+__Lbank34 0 0 BANK34 1 bank34 -
+__Lbank35 0 0 BANK35 1 bank35 -
+__Lbank36 0 0 BANK36 1 bank36 -
+__Lbank37 0 0 BANK37 1 bank37 -
+__Lbank38 0 0 BANK38 1 bank38 -
+__Lbank39 0 0 BANK39 1 bank39 -
+__Lbank40 0 0 BANK40 1 bank40 -
+__Lbank41 0 0 BANK41 1 bank41 -
+__Lbank42 0 0 BANK42 1 bank42 -
+__Lbank43 0 0 BANK43 1 bank43 -
+__Lbank44 0 0 BANK44 1 bank44 -
+__Lbank45 0 0 BANK45 1 bank45 -
+__Lbank46 0 0 BANK46 1 bank46 -
+__Lbank47 0 0 BANK47 1 bank47 -
+__Lbank48 0 0 BANK48 1 bank48 -
+__Lbank49 0 0 BANK49 1 bank49 -
+__Lbank50 0 0 BANK50 1 bank50 -
+__Lbank51 0 0 BANK51 1 bank51 -
+__Lbank52 0 0 BANK52 1 bank52 -
+__Lbank53 0 0 BANK53 1 bank53 -
+__Lbank54 0 0 BANK54 1 bank54 -
+__Lbank55 0 0 BANK55 1 bank55 -
+__Lbank56 0 0 BANK56 1 bank56 -
+__Lbank57 0 0 BANK57 1 bank57 -
+__Lbank58 0 0 BANK58 1 bank58 -
+__Lbank59 0 0 BANK59 1 bank59 -
+__Lbank60 0 0 BANK60 1 bank60 -
+__Lbank61 0 0 BANK61 1 bank61 -
+__Lbank62 0 0 BANK62 1 bank62 -
+__Lbank63 0 0 BANK63 1 bank63 -
+__pmaintext 1C4A 0 CODE 0 maintext dist/default/production\Sensor_Board.production.o
+__size_of_RTC_Init 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__Lbigram 0 0 ABS 0 bigram -
+_eusart1TxHead C2 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+_eusart1TxTail C1 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+?_dtoa 48 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+_printf 13A0 0 CODE 0 text1 dist/default/production\Sensor_Board.production.o
+__end_of_TMR0_ISR 11A4 0 CODE 0 text46 dist/default/production\Sensor_Board.production.o
+__Hinittext 0 0 ABS 0 inittext -
+_LATAbits 18 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_LATBbits 19 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_EUSART1_SetErrorHandler 11FA 0 CODE 0 text35 dist/default/production\Sensor_Board.production.o
+__end_of_I2C2_Stop 1434 0 CODE 0 text52 dist/default/production\Sensor_Board.production.o
+__size_of_I2C2_Stop 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__end_of_EUSART1_SetErrorHandler 120C 0 CODE 0 text35 dist/default/production\Sensor_Board.production.o
+_SPI1_Exchange8bit 1292 0 CODE 0 text44 dist/default/production\Sensor_Board.production.o
+_strlen 146A 0 CODE 0 text6 dist/default/production\Sensor_Board.production.o
+__end_of_OLED_GotoXY 1706 0 CODE 0 text12 dist/default/production\Sensor_Board.production.o
+_TMR0_SetInterruptHandler 1254 0 CODE 0 text24 dist/default/production\Sensor_Board.production.o
+__size_of_vfprintf 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+I2C2_ISR@i2c_address C6 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+__end_of_EUSART1_SetFramingErrorHandler 121E 0 CODE 0 text34 dist/default/production\Sensor_Board.production.o
+__end_of_EUSART1_SetOverrunErrorHandler 1230 0 CODE 0 text33 dist/default/production\Sensor_Board.production.o
+__end_of_EUSART1_Write 17C0 0 CODE 0 text14 dist/default/production\Sensor_Board.production.o
+_SSP1CLKPPS 1EC5 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+SPI1_Exchange8bit@data 20 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+_OSCCON1 88D 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_OSCCON3 88F 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_OSCSTAT 890 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_OSCTUNE 892 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+OLED_GotoXY@x 25 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+OLED_GotoXY@y 23 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+_SSP1DATPPS 1EC6 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_ADCON0bits 9D 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_OLED_Clear 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+RTC_Init@data 30 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+_I2C2_Stop 1400 0 CODE 0 text52 dist/default/production\Sensor_Board.production.o
+?_vfpfcnvrt 66 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 7A 0 COMMON 1 bssCOMMON dist/default/production\Sensor_Board.production.o
+__end_of_ADC_Initialize 11DA 0 CODE 0 text36 dist/default/production\Sensor_Board.production.o
+__end_of_EUSART1_RxDataHandler 146A 0 CODE 0 text60 dist/default/production\Sensor_Board.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+_PIR0bits 70C 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_PIR3bits 70F 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_PIR4bits 710 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__Lend_init 9E 0 CODE 0 end_init -
+___aodiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__size_of_TMR0_CallBack 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+___aodiv@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+printf@ap DD 0 BANK1 1 cstackBANK1 dist/default/production\Sensor_Board.production.o
+_eusart1TxBuffer 15A 0 BANK2 1 bssBANK2 dist/default/production\Sensor_Board.production.o
+_EUSART1_SetTxInterruptHandler 1242 0 CODE 0 text31 dist/default/production\Sensor_Board.production.o
+end_of_initialization F2 0 CODE 0 cinit dist/default/production\Sensor_Board.production.o
+_p_state B3 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+_TMR0_Initialize 131C 0 CODE 0 text23 dist/default/production\Sensor_Board.production.o
+__Hintentry 9E 0 CODE 0 intentry -
+__size_of_printf 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+fputc@c 2F 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+fputs@c 3B 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+fputs@i 3C 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+fputs@s 3E 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+_TX1STAbits 11E 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__Lstrings 0 0 ABS 0 strings -
+_RTC_Init 1614 0 CODE 0 text37 dist/default/production\Sensor_Board.production.o
+___awdiv@quotient 27 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+?___aodiv 20 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+?___aomod 20 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+?___awdiv 20 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+vfprintf@fmt 6D 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec -
+EUSART1_SetRxInterruptHandler@interruptHandler 20 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__HbssBANK2 0 0 ABS 0 bssBANK2 -
+__HbssBANK3 0 0 ABS 0 bssBANK3 -
+_EUSART1_RxDataHandler 1434 0 CODE 0 text60 dist/default/production\Sensor_Board.production.o
+__size_of_strlen 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__end_of_RTC_Init 165C 0 CODE 0 text37 dist/default/production\Sensor_Board.production.o
+I2C2_MasterWrite@length 27 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+vfpfcnvrt@ap 67 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+vfpfcnvrt@fp D0 0 BANK1 1 cstackBANK1 dist/default/production\Sensor_Board.production.o
+vfpfcnvrt@ll C8 0 BANK1 1 cstackBANK1 dist/default/production\Sensor_Board.production.o
+__ptext1 13A0 0 CODE 0 text1 dist/default/production\Sensor_Board.production.o
+__ptext2 17C0 0 CODE 0 text2 dist/default/production\Sensor_Board.production.o
+__ptext3 D44 0 CODE 0 text3 dist/default/production\Sensor_Board.production.o
+__ptext4 3E6 0 CODE 0 text4 dist/default/production\Sensor_Board.production.o
+__ptext5 1A22 0 CODE 0 text5 dist/default/production\Sensor_Board.production.o
+__ptext6 146A 0 CODE 0 text6 dist/default/production\Sensor_Board.production.o
+__ptext7 165C 0 CODE 0 text7 dist/default/production\Sensor_Board.production.o
+__ptext8 1914 0 CODE 0 text8 dist/default/production\Sensor_Board.production.o
+__ptext9 13CE 0 CODE 0 text9 dist/default/production\Sensor_Board.production.o
+_RX1DTPPS 1ECB 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+vfprintf@ap 6F 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+vfprintf@fp D3 0 BANK1 1 cstackBANK1 dist/default/production\Sensor_Board.production.o
+vfprintf@cfmt D4 0 BANK1 1 cstackBANK1 dist/default/production\Sensor_Board.production.o
+BTN_GetNegEdge@flags B7 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+_vfprintf 17C0 0 CODE 0 text2 dist/default/production\Sensor_Board.production.o
+__end_of_TMR0_CallBack 1292 0 CODE 0 text47 dist/default/production\Sensor_Board.production.o
+_i2c2_object A0 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_currentState B4 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+__end_of_TMR1_Initialize 1372 0 CODE 0 text22 dist/default/production\Sensor_Board.production.o
+__end_of_TMR1_StartTimer 1182 0 CODE 0 text19 dist/default/production\Sensor_Board.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__Hstringtext1 0 0 ABS 0 stringtext1 -
+__Hstringtext2 0 0 ABS 0 stringtext2 -
+__Hstringtext3 0 0 ABS 0 stringtext3 -
+__Hstringtext4 0 0 ABS 0 stringtext4 -
+__Hstringtext5 0 0 ABS 0 stringtext5 -
+_i2c2_trb_count BD 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+__end_of_vfprintf 182C 0 CODE 0 text2 dist/default/production\Sensor_Board.production.o
+_EUSART1_TxDefaultInterruptHandler 16E 0 BANK2 1 nvBANK2 dist/default/production\Sensor_Board.production.o
+_SLRCONA 1F3B 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_SLRCONB 1F46 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_SLRCONC 1F51 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_SLRCOND 1F5C 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_SLRCONE 1F67 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_SLRCONF 1E53 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__end_of__initialization F2 0 CODE 0 cinit dist/default/production\Sensor_Board.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK1 1266 0 CODE 0 idataBANK1 dist/default/production\Sensor_Board.production.o
+_SP1BRGH 11C 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_SP1BRGL 11B 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+RTC_ConvertTemp@F8254 E4 0 BANK1 1 dataBANK1 dist/default/production\Sensor_Board.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+_SSP1CON1bits 190 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_timer1ReloadVal EB 0 BANK1 1 nvBANK1 dist/default/production\Sensor_Board.production.o
+_EUSART1_SetRxInterruptHandler 1230 0 CODE 0 text32 dist/default/production\Sensor_Board.production.o
+_printfEnableOLED E9 0 BANK1 1 dataBANK1 dist/default/production\Sensor_Board.production.o
+_printfEnableUART B6 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+I2C2_ISR@i2c_10bit_address_restart B8 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+_eusart1RxBuffer 152 0 BANK2 1 bssBANK2 dist/default/production\Sensor_Board.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Sensor_Board.production.o
+_EUSART1_Transmit_ISR 1588 0 CODE 0 text55 dist/default/production\Sensor_Board.production.o
+_T0CON0bits 59E 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_SSP1ADD 18D 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_SSP1BUF 18C 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_SSP2ADD 197 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_SSP2BUF 196 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__Hend_init A2 0 CODE 0 end_init -
+__size_of_TMR0_SetInterruptHandler 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_EUSART1_SetFramingErrorHandler 120C 0 CODE 0 text34 dist/default/production\Sensor_Board.production.o
+OLED_Putc@ch 2D 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+_EUSART1_SetOverrunErrorHandler 121E 0 CODE 0 text33 dist/default/production\Sensor_Board.production.o
+__end_of_Send 1588 0 CODE 0 text43 dist/default/production\Sensor_Board.production.o
+__end_of_dtoa 6C6 0 CODE 0 text4 dist/default/production\Sensor_Board.production.o
+__end_of_main 1D34 0 CODE 0 maintext dist/default/production\Sensor_Board.production.o
+_I2C2_WaitForLastPacketToComplete 11BC 0 CODE 0 text41 dist/default/production\Sensor_Board.production.o
+printf@fmt D6 0 BANK1 1 cstackBANK1 dist/default/production\Sensor_Board.production.o
+__end_of_fputc 1996 0 CODE 0 text8 dist/default/production\Sensor_Board.production.o
+__end_of_fputs 16AE 0 CODE 0 text7 dist/default/production\Sensor_Board.production.o
+_OSCEN 891 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_PORTC E 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_T1CLK 211 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_T1CON 20E 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_TMR0H 59D 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_TMR0L 59C 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_TMR1H 20D 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_TMR1L 20C 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_TRISA 12 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_TRISB 13 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_TRISC 14 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_TRISD 15 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_TRISE 16 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_TRISF 17 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__end_of_putch 1400 0 CODE 0 text9 dist/default/production\Sensor_Board.production.o
+__size_of_TMR0_Initialize 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_TMR1_Initialize 1346 0 CODE 0 text22 dist/default/production\Sensor_Board.production.o
+_TMR1_StartTimer 117C 0 CODE 0 text19 dist/default/production\Sensor_Board.production.o
+_flags AB 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+_fputc 1914 0 CODE 0 text8 dist/default/production\Sensor_Board.production.o
+_fputs 165C 0 CODE 0 text7 dist/default/production\Sensor_Board.production.o
+_putch 13CE 0 CODE 0 text9 dist/default/production\Sensor_Board.production.o
+Send@data 22 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+_width A7 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_OLED_GotoXY 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_eusart1RxCount C0 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\Sensor_Board.production.o
+__end_of_SYSTICK_Handler 1E26 0 CODE 0 text48 dist/default/production\Sensor_Board.production.o
+__size_of_abs 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__size_of_pad 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+__HdataBANK1 0 0 ABS 0 dataBANK1 -
+__end_of_EUSART1_Initialize 1A22 0 CODE 0 text30 dist/default/production\Sensor_Board.production.o
+__end_of_OSCILLATOR_Initialize 1000 0 CODE 0 text28 dist/default/production\Sensor_Board.production.o
+__initialization A2 0 CODE 0 cinit dist/default/production\Sensor_Board.production.o
+___bmul@product 72 0 COMMON 1 cstackCOMMON dist/default/production\Sensor_Board.production.o
+I2C2_ISR@i2c_bytes_left B9 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+__pbssBANK2 120 0 BANK2 1 bssBANK2 dist/default/production\Sensor_Board.production.o
+__pbssBANK3 1A0 0 BANK3 1 bssBANK3 dist/default/production\Sensor_Board.production.o
+RTC_Init@F8226 E6 0 BANK1 1 dataBANK1 dist/default/production\Sensor_Board.production.o
+_I2C2_MasterWrite 1706 0 CODE 0 text38 dist/default/production\Sensor_Board.production.o
+_eusart1RxStatusBuffer 14A 0 BANK2 1 bssBANK2 dist/default/production\Sensor_Board.production.o
+_i2c2_tr_queue C3 0 BANK1 1 bssBANK1 dist/default/production\Sensor_Board.production.o
+dtoa@d 48 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+dtoa@i 64 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+dtoa@n 5C 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+dtoa@p 55 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+dtoa@s 5A 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+dtoa@w 58 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+I2C2_Stop@completion_code 71 0 COMMON 1 cstackCOMMON dist/default/production\Sensor_Board.production.o
+_SSP2CLKPPS 1EC8 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_I2C2_MasterTRBInsert 1AD4 0 CODE 0 text40 dist/default/production\Sensor_Board.production.o
+__size_of_EUSART1_DefaultErrorHandler 0 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+_SSP2DATPPS 1EC9 0 ABS 0 - dist/default/production\Sensor_Board.production.o
+EUSART1_SetOverrunErrorHandler@interruptHandler 20 0 BANK0 1 cstackBANK0 dist/default/production\Sensor_Board.production.o
+_OSCILLATOR_Initialize FEC 0 CODE 0 text28 dist/default/production\Sensor_Board.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text1 0 9D0 13A0 17 2
+text2 0 BE0 17C0 36 2
+text3 0 6A2 D44 15E 2
+text5 0 D11 1A22 59 2
+text6 0 A35 146A 1B 2
+text7 0 B2E 165C 29 2
+text8 0 C8A 1914 41 2
+text9 0 9E7 13CE 19 2
+text11 0 DC5 1B8A 60 2
+text12 0 B57 16AE 2C 2
+text13 0 957 12AE F 2
+text14 0 BB0 1760 30 2
+text15 0 A88 1510 1C 2
+text16 0 F13 1E26 ED 2
+text18 0 8C1 1182 3 2
+text19 0 8BE 117C 3 2
+text20 0 9B9 1372 17 2
+text21 0 A6C 14D8 1C 2
+text22 0 9A3 1346 16 2
+text23 0 98E 131C 15 2
+text24 0 92A 1254 9 2
+text25 0 8F5 11EA 8 2
+text26 0 8ED 11DA 8 2
+text29 0 A50 14A0 1C 2
+text30 0 CCB 1996 46 2
+text31 0 921 1242 9 2
+text32 0 918 1230 9 2
+text33 0 90F 121E 9 2
+text34 0 906 120C 9 2
+text35 0 8FD 11FA 9 2
+text36 0 8E5 11CA 8 2
+text37 0 B0A 1614 24 2
+text38 0 B83 1706 2D 2
+text39 0 AE7 15CE 23 2
+text40 0 D6A 1AD4 5B 2
+text41 0 8DE 11BC 7 2
+text42 0 C16 182C 38 2
+text43 0 AA4 1548 20 2
+text44 0 949 1292 E 2
+text46 0 8CC 1198 6 2
+text47 0 93C 1278 D 2
+text48 0 E9A 1D34 79 2
+text49 0 3 6 1 2
+text50 0 979 12F2 15 2
+text52 0 A00 1400 1A 2
+text53 0 966 12CC 13 2
+text54 0 8BB 1176 3 2
+text55 0 AC4 1588 23 2
+text56 0 C4E 189C 3C 2
+text57 0 8C8 1190 4 2
+text59 0 8C4 1188 4 2
+text60 0 A1A 1434 1B 2
+maintext 0 E25 1C4A 75 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 50 1
+inittext 0 8D8 11B0 6 2
+stringtext1 0 5A2 B44 100 2
+stringtext2 0 1000 2000 1E 2
+intentry 0 4 8 59E 2
+reset_vec 0 0 0 3 2
+bssBANK1 1 A0 A0 50 1
+bssBANK2 1 120 120 50 1
+bssBANK3 1 1A0 1A0 24 1
+idataBANK1 0 933 1266 9 2
+clrtext 0 8D2 11A4 6 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

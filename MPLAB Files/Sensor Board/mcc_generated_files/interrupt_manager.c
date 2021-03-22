@@ -56,10 +56,6 @@ void __interrupt() INTERRUPT_InterruptManager (void)
     {
         TMR0_ISR();
     }
-    else if(PIE0bits.IOCIE == 1 && PIR0bits.IOCIF == 1)
-    {
-        PIN_MANAGER_IOC();
-    }
     else if(INTCONbits.PEIE == 1)
     {
         if(PIE3bits.BCL2IE == 1 && PIR3bits.BCL2IF == 1)
